@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tickets &amp; Promos | Planetary X Theme Park</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Description to optimise SEO -->
+  <meta name="description" content="Buy day tickets, standard and premium season passes, group tickets, and event bookings." />
+  <!-- Limiting to 10 top key words -->
+  <meta name="keywords" content="ticket, book, buy, purchase, day pass, standard season pass, premium season pass, group booking, group tickets, event booking" />
+  <meta name="author" content="James Carpenter" />
+  <!-- Normalize CSS is a third party CSS file that we have used to ensure cross-browser compatability and responsiveness -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
+  <!-- External stylesheet containing most styling information of the page -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <script src="./assets/js/responsive_menu.js"></script>
+  <!-- External CSS for 3rd party font-awesome icons  -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <!-- Top and main Navigation bars goes into header tag -->
+  <header>
+    <!-- Top level navigation bar-->
+    <div id="top-nav">
+      <nav>
+        <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+        <ul>
+          <li><a href="./placeholder.html">About</a></li>
+          <li><a href="./placeholder.html">Careers</a></li>
+          <li><a href="./placeholder.html">Mobile App</a></li>
+        </ul>
+      </nav>
+      <!-- search input goes into top navigation area, but is not a navigational link therefore is excluded from the <nav> tag . Form tag used for semantics-->
+      <form>
+        <input type="search" name="site-search" placeholder="Search..." />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <!-- Main navigation bar - includes icon that links to home page and the 2 other submission pages -->
+    <nav id="main-nav">
+      <div id="logo">
+        <!-- Image tag nested within anchor tags for creating hyperlink to image  -->
+        <a href="./index.html">
+          <img src="./assets/images/logo-250.png" alt="Planetary X Theme Park"/>
+        </a>
+      </div>
+      <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+      <ul>
+        <!-- Current page underlined -->
+        <li><a href="./tickets.html"><u>Tickets &amp; Promos</u></a></li>
+        <li><a href="./plan.html">Plan Visit</a></li>
+      </ul>
+      <!--  Drop down navigation (menu) for responsive tablet and mobile views, called with CSS media queries -->
+      <div id="dropdown">
+        <!-- Button icon for users to click to show contents -->
+        <button id="dropbtn">Menu
+          <i class="fas fa-bars">
+          </i>
+        </button>
+        <!-- Contents of the navigational menu bar in responsive mode  -->
+        <div id="dropdown-content">
+          <a href="./tickets.html">Tickets &amp; Promos</a>
+          <a href="./plan.html">Plan Visit</a>
+          <a href="./placeholder.html">About</a>
+          <a href="./placeholder.html">Careers</a>
+          <a href="./placeholder.html">Mobile App</a>
+        </div>
+      </div >
+    </nav>
+  </header>
+
+  <!-- Main tickets page content -->
+  <main>
+    <!-- Page title - h1 tag for web crawlers to identify starting point of page -->
+    <div class="page-title">
+      <!-- & symbol as a special character -->
+      <h1>Tickets &amp; Promos</h1>
+    </div>
+
+    <!-- div container to wrap main contents -->
+    <div class="wrapper">
+      <!-- Information on the different types passes, encapsulated within a section tag -->
+      <section id="passes">
+        <h2>Passes</h2>
+        <!-- div tag used to containerize all pass types -->
+        <div class="container">
+          <!-- div tag used to containerize details within a single pass type -->
+          <div class="pass">
+            <!-- One day pass -->
+            <h3>1 Day Pass - $25</h3>
+            <img src="./assets/images/one-day-pass-300.png" alt="One-Day Pass" />
+            <!-- Detailed information of each pass listed as an unordered list -->
+            <ul>
+              <li>Students get 10% off.</li>
+              <li>Enjoy full day access (9am-5pm) to all our rides and experiences within the park.</li>
+            </ul>
+            <!-- Hyperlink to booking facility formatted to look like a button using CSS -->
+            <a class="button" href="./placeholder.html">Book Now</a>
+          </div>
+          <!-- div tag used to containerize details within a single pass type -->
+          <div class="pass">
+            <!-- Standard season pass -->
+            <h3>Standard Season Pass - $65</h3>
+            <img src="./assets/images/season-standard-300.png" alt="Standard Season Pass" />
+            <!-- Detailed information of each pass listed as an unordered list -->
+            <ul>
+              <li>Unlimited access to rides and experiences on weekdays and non-public holidays.</li>
+              <li>Valid for 1 year from purchase.</li>
+            </ul>
+            <!-- Hyperlink to booking facility formatted to look like a button using CSS -->
+            <a class="button" href="./placeholder.html">Book Now</a>
+          </div>
+          <!-- div tag used to containerize details within a single pass type -->
+          <div class="pass">
+            <!-- Premium season pass -->
+            <h3>Premium season Pass - $80</h3>
+            <img src="./assets/images/season-premium-300.png" alt="Premium Season Pass" />
+            <!-- Detailed information of each pass listed as an unordered list -->
+            <ul>
+              <li>The ultimate pass to get unlimited access to all rides and experiences all year round! </li>
+              <li>Valid for 1 year from purchase.</li>
+            </ul>
+            <!-- Hyperlink to booking facility formatted to look like a button using CSS -->
+            <a class="button" href="./placeholder.html">Book Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Information on group bookings, encapsulated within a section tag -->
+      <section id="group-bookings">
+        <h2>Group Bookings</h2>
+        <!-- Same class used as explore section in index.html for consistency in styling -->
+        <div class="featured-item">
+          <!-- image of featured items within a div for display next to text of featured item -->
+          <div class="featured-item-image">
+            <img src="./assets/images/ticket-groups-500.jpg" alt="A group of friends having fun" />
+          </div>
+          <!-- text of featured items within a div for display next to image of featured item -->
+          <div class="featured-item-text">
+            <h3>Want to Book for a Large Group?</h3>
+            <p>We offer discount entry for schools or those wanting to visit Planetary X as a group. </p>
+            <!-- Hyperlink to booking facility formatted to look like a button using CSS -->
+            <a class="button" href="./placeholder.html">Find out more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Information on event bookings, encapsulated within a section tag -->
+      <section id="event-bookings">
+        <h2>Event Bookings</h2>
+        <!-- Same class used as explore section in index.html for consistency in styling -->
+        <div class="featured-item">
+          <!-- image of featured items within a div for display next to text of featured item -->
+          <div class="featured-item-image">
+            <img src="./assets/images/ticket-events-500.jpg" alt="A birthday celebration" />
+          </div>
+          <!-- text of featured items within a div for display next to image of featured item -->
+          <div class="featured-item-text">
+            <h3>Planning an Event with us?</h3>
+            <p>Planning an event at Planetary X? We can't wait to make your guests' experience one they will never forget. It's sort of our thing here. Please contact us at <a href="tel:+012345432234">+01 234-5432-234</a>.</p>
+            <a class="button" href="./placeholder.html">Find out more</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <!-- The footer contains 2 sections - social and contact information and a navigation  -->
+   <div class="footer-inner">
+    <div id="footer-top">
+      <div class="footer-content" id="social">
+        <!-- Subscription sign-up -->
+        <div id="subscription">
+          <h4>Subscribe to get the latest promotions!</h4>
+          <!-- Email address to be entered by user - input tag takes in user input -->
+          <input type="email" name="subscribe-email" placeholder="Enter Email..."/>
+          <!-- Subscribe button- button tag gives semantic meaning -->
+          <button type="submit">Subscribe</button>
+        </div>
+        <!-- Social media links -->
+        <div  id="social-media">
+          <h4>Follow Us:</h4>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/">
+                <img src="./assets/images/facebook-150.png" alt="Facebook" width="40" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/">
+                <img src="./assets/images/twitter-150.png" alt="Twitter" width="40" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <img src="./assets/images/instagram-150.png" alt="Instagram" width="40" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Contact information -->
+      <div class="footer-content" id="address">
+        <h4>Address</h4>
+        <i class='fas fa-map-marker-alt fa-lg'></i>
+        <!-- Address tags used as contents have semantic contact information -->
+        <address class="address-details">
+          <p>123 Somewhere Road
+            <!-- Break country and postal code to next line -->
+            <br />
+            Some Country, 123345</p>
+        </address>
+        <h4>Need help?<i class='far fa-question-circle'></i></h4>
+        <address>
+          <!-- mailto attribute allows browser to call mailing application   -->
+          <p>
+            <!-- hide text but keep for screen readers -->
+            <span class="hidden">Email:</span>
+            <i class='far fa-envelope fa-lg' ></i>
+            <a href="mailto:enquiries@planetaryxpark.com">enquiries@PlanetaryX.com</a>
+          </p>
+          <!-- tel attribute allows browser to call phone application   -->
+          <p>
+            <!-- hide text but keep for screen readers -->
+            <span class="hidden">Call Us:</span>
+            <i class='fas fa-phone-alt fa-lg'></i>
+            <a href="tel:+012345432234">+01 234-5432-234</a>  (9am-5pm)
+          </p>
+        </address>
+      </div>
+    </div>
+   </div>
+
+    <!-- Footer Navigation -->
+    <nav id="footer-nav">
+      <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+      <ul>
+        <li><a href="./placeholder.html">About</a></li>
+        <li><a href="./placeholder.html">Careers</a></li>
+        <li><a href="./placeholder.html">Lost &amp; Found</a></li>
+        <li><a href="./tickets.html">Tickets &amp; Promos</a></li>
+        <li><a href="./plan.html">Plan Visit</a></li>
+      </ul>
+    </nav>
+
+    <!-- Legal Section -->
+    <div id="legal">
+      <p>
+        <!-- Copyright symbol as a special character -->
+        Copyright &copy; |
+        <a href="./placeholder.html">Privacy</a> |
+        <a href="./placeholder.html">Terms and Conditions</a> |
+        <a href="./placeholder.html">Site Map</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

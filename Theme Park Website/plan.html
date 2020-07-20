@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Plan Your Visit | Planetary X Theme Park</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Description to optimise SEO -->
+  <meta name="description" content="Planetary X Park opening hours, directions, parking, and other useful park visitor information." />
+  <!-- Limiting to 10 top key words -->
+  <meta name="keywords" content="operating hours, directions, park map, event calendar, schedule, parking, ride restrictions, lost and found, mobile app, shuttle service" />
+  <meta name="author" content="James Carpenter" />
+  <!-- Normalize CSS is a third party CSS file that we have used to ensure cross-browser compatability and responsiveness -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
+  <!-- External stylesheet containing most styling information of the page -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <script src="./assets/js/responsive_menu.js"></script>
+ <!-- External CSS for 3rd party font-awesome icons  -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <!-- Top and main Navigation bars goes into header tag -->
+  <header>
+    <!-- Top level navigation bar-->
+    <div id="top-nav">
+      <nav>
+        <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+        <ul>
+          <li><a href="./placeholder.html">About</a></li>
+          <li><a href="./placeholder.html">Careers</a></li>
+          <li><a href="./placeholder.html">Mobile App</a></li>
+        </ul>
+      </nav>
+      <!-- search input goes into top navigation area, but is not a navigational link therefore is excluded from the <nav> tag . Form tag used for semantics-->
+      <form>
+        <input type="search" name="site-search" placeholder="Search..." />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <!-- Main navigation bar - includes icon that links to home page and the 2 other submission pages -->
+    <nav id="main-nav">
+      <div id="logo">
+        <!-- Image tag nested within anchor tags for creating hyperlink to image  -->
+        <a href="./index.html">
+          <img src="./assets/images/logo-250.png" alt="Planetary X Theme Park"/>
+        </a>
+      </div>
+      <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+      <ul>
+        <li><a href="./tickets.html">Tickets &amp; Promos</a></li>
+        <!-- Current page underlined -->
+        <li><a href="./plan.html"><u>Plan Visit</u></a></li>
+      </ul>
+      <!--  Drop down navigation (menu) for responsive tablet and mobile views, called with CSS media queries -->
+      <div id="dropdown">
+        <!-- Button icon for users to click to show contents -->
+        <button id="dropbtn">Menu
+          <i class="fas fa-bars">
+          </i>
+        </button>
+        <!-- Contents of the navigational menu bar in responsive mode  -->
+        <div id="dropdown-content">
+          <a href="./tickets.html">Tickets &amp; Promos</a>
+          <a href="./plan.html">Plan Visit</a>
+          <a href="./placeholder.html">About</a>
+          <a href="./placeholder.html">Careers</a>
+          <a href="./placeholder.html">Mobile App</a>
+        </div>
+      </div >
+    </nav>
+  </header>
+
+  <!-- Main plan visit page content -->
+  <main>
+    <!-- Page title section -->
+    <div class="page-title">
+      <!-- Page title - h1 tag for web crawlers to identify starting point of page -->
+      <h1>Plan Your Visit</h1>
+    </div>
+
+    <!-- Banner Image section -->
+    <div id="call-to-action-banner">
+      <!-- Text here is not a heading, unlike the home page banner -->
+      <p>Ready to travel the globe at Planetary X Theme Park?</p>
+      <!-- Added call to action button within the banner -->
+      <a class="button call-to-action" href="./tickets.html">Book now</a>
+    </div>
+
+    <!-- div container to wrap main contents -->
+    <div class="wrapper">
+      <!-- Information on operating hours of the park, encapsulated within a section tag -->
+      <section id="hours-events">
+        <h2>Operating Hours &amp; Events</h2>
+        <!-- Details of operating hours  -->
+        <p>Our park opens daily from 9am to 5pm. Look here for upcoming special events.</p>
+        <!-- div tag used to containerize the 3 "upcoming special events" together -->
+        <div class="container">
+          <!-- div tag containerizing all objects belonging to a single event -->
+          <div id="hieroglyphics" class="event">
+            <!-- div tag grouping event date details together -->
+            <div class="event-date">
+              <p class="event-month">Jul</p>
+              <p class="event-day">16</p>
+            </div>
+            <!-- div tag grouping event details together -->
+            <div class="event-label">
+              <h3>Exploring Egyptian Hieroglyphics</h3>
+              <p>Egypt Land</p>
+            </div>
+          </div>
+          <!-- div tag containerizing all objects belonging to a single event -->
+          <div id="helix-bridge" class="event">
+            <!-- div tag grouping event date details together -->
+            <div class="event-date">
+              <p class="event-month">Jul</p>
+              <p class="event-day">19</p>
+            </div>
+            <!-- div tag grouping event details together -->
+            <div class="event-label">
+              <h3>A Walk Through the Helix Bridge</h3>
+              <p>Room 23 - Singapore Land</p>
+            </div>
+          </div>
+          <!-- div tag containerizing all objects belonging to a single event -->
+          <div id="footprint" class="event">
+            <!-- div tag grouping event date details together -->
+            <div class="event-date">
+              <p class="event-month">Aug</p>
+              <p class="event-day">09</p>
+            </div>
+            <!-- div tag grouping event details together -->
+            <div class="event-label">
+              <h3>Human Footprint and Planet Earth</h3>
+              <p>Room 2 - Canada Land</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Information on getting to the park, encapsulated within a section tag -->
+      <section id="getting-here">
+        <h2>Getting Here</h2>
+        <!-- div tag to containerize objects within the getting here section for CSS formatting -->
+        <div class="container">
+          <div id="getting-here-map">
+            <!-- iframe tag used to embed interactive map by google. UOL compus used as an pseudo location -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.470056247857!2d-0.13300928411389515!3d51.52293777963771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2e05fa84a1%3A0x35223832b9a7517a!2sUniversity%20of%20London!5e0!3m2!1sen!2ssg!4v1593181345832!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <!-- div tag for formatting 2 items placed next to the map -->
+          <div id="getting-here-links">
+              <div id="parking" class="getting-here-link">
+                <a class="button" href="./placeholder.html">Parking</a>
+              </div>
+              <div id="shuttle-service" class="getting-here-link">
+                <a class="button" href="./placeholder.html">Shuttle Services</a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Information on getting around the park, encapsulated within a section tag -->
+      <section id="getting-around">
+        <h2>Getting Around the Park</h2>
+        <!-- Same class used as explore section in index.html for consistency in styling -->
+        <div class="featured-item">
+          <!-- image of featured items within a div for display next to text of featured item -->
+          <div class="featured-item-image">
+            <img src="./assets/images/themeparkmap-500.jpg" alt="Planetary X Park map" />
+          </div>
+          <!-- text of featured items within a div for display next to image of featured item -->
+          <div class="featured-item-text">
+            <h3>Find Rides &amp; Restaurants</h3>
+            <p>Find your way around the different countries within the park. Find rides, experiences, food, and services available within the park.</p>
+            <a class="button" href="./placeholder.html">Download Map</a>
+          </div>
+        </div>
+        <!-- Same class used as explore section in index.html for consistency in styling -->
+        <div class="featured-item">
+          <div class="featured-item-image">
+            <img src="./assets/images/mobileapp-500.png" alt="People using our mobile app" />
+          </div>
+          <!-- text of featured items within a div for display next to image of featured item -->
+          <div class="featured-item-text">
+            <h3>Download our Park App on Mobile!</h3>
+            <p>Get special offers, accumulate points, and never get lost in the park with the Planetary X Theme Park mobile app. Available for download on Android and iPhone now.</p>
+            <a class="button" href="./placeholder.html">Download App</a>
+          </div>
+        </div>
+        <!-- Include text for physical accessibility to the park. anchor tags used for contact details and link to form within the paragraph  -->
+        <p>Need special arrangements for disabled access? Fill in our form <a href="./placeholder.html">here</a> or contact our service staff at <a href="tel:+012345432234">+01 234-5432-234</a> (9am-5pm).</p>
+      </section>
+
+      <!-- Information on park general park services and information, encapsulated within a section tag -->
+      <section id="services">
+        <h2>Services &amp; Information</h2>
+        <!-- div tag to containerize objects within the getting here section for CSS formatting -->
+        <div class="container">
+          <!-- Each item encapsulated in div tags, with image as background with CSS -->
+          <div id="hotels" class="service">
+            <a class="button" href="./placeholder.html">Hotels</a>
+          </div>
+          <!-- Each item encapsulated in div tags, with image as background with CSS -->
+          <div id="lost-and-found" class="service">
+            <a class="button" href="./placeholder.html">Lost &amp; Found</a>
+          </div>
+          <!-- Each item encapsulated in div tags, with image as background with CSS -->
+          <div id="ride-restrictions" class="service">
+            <a class="button" href="./placeholder.html">Ride Restrictions</a>
+          </div>
+          <!-- Each item encapsulated in div tags, with image as background with CSS -->
+          <div id="safety-and-rules" class="service">
+            <a class="button" href="./placeholder.html">Safety &amp; Rules</a>
+          </div>
+          <!-- Each item encapsulated in div tags, with image as background with CSS -->
+          <div id="pets" class="service">
+            <a class="button" href="./placeholder.html">Pets</a>
+          </div>
+          <!-- Each item encapsulated in div tags, with image as background with CSS -->
+          <div id="park-facilities" class="service">
+            <a class="button" href="./placeholder.html">Park Facilities</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <!-- The footer contains 2 sections - social and contact information and a navigation  -->
+   <div class="footer-inner">
+    <div id="footer-top">
+      <div class="footer-content" id="social">
+        <!-- Subscription sign-up -->
+        <div id="subscription">
+          <h4>Subscribe to get the latest promotions!</h4>
+          <!-- Email address to be entered by user - input tag takes in user input -->
+          <input type="email" name="subscribe-email" placeholder="Enter Email..."/>
+          <!-- Subscribe button- button tag gives semantic meaning -->
+          <button type="submit">Subscribe</button>
+        </div>
+        <!-- Social media links -->
+        <div  id="social-media">
+          <h4>Follow Us:</h4>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/">
+                <img src="./assets/images/facebook-150.png" alt="Facebook" width="40" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/">
+                <img src="./assets/images/twitter-150.png" alt="Twitter" width="40" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <img src="./assets/images/instagram-150.png" alt="Instagram" width="40" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Contact information -->
+      <div class="footer-content" id="address">
+        <h4>Address</h4>
+        <i class='fas fa-map-marker-alt fa-lg'></i>
+        <!-- Address tags used as contents have semantic contact information -->
+        <address class="address-details">
+          <p>123 Somewhere Road
+            <!-- Break country and postal code to next line -->
+            <br />
+            Some Country, 123345</p>
+        </address>
+        <h4>Need help?<i class='far fa-question-circle'></i></h4>
+        <address>
+          <!-- mailto attribute allows browser to call mailing application   -->
+          <p>
+            <!-- hide text but keep for screen readers -->
+            <span class="hidden">Email:</span>
+            <i class='far fa-envelope fa-lg' ></i>
+            <a href="mailto:enquiries@planetaryxpark.com">enquiries@PlanetaryX.com</a>
+          </p>
+          <!-- tel attribute allows browser to call phone application   -->
+          <p>
+            <!-- hide text but keep for screen readers -->
+            <span class="hidden">Call Us:</span>
+            <i class='fas fa-phone-alt fa-lg'></i>
+            <a href="tel:+012345432234">+01 234-5432-234</a>  (9am-5pm)
+          </p>
+        </address>
+      </div>
+    </div>
+   </div>
+
+    <!-- Footer Navigation -->
+    <nav id="footer-nav">
+      <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+      <ul>
+        <li><a href="./placeholder.html">About</a></li>
+        <li><a href="./placeholder.html">Careers</a></li>
+        <li><a href="./placeholder.html">Lost &amp; Found</a></li>
+        <li><a href="./tickets.html">Tickets &amp; Promos</a></li>
+        <li><a href="./plan.html">Plan Visit</a></li>
+      </ul>
+    </nav>
+
+    <!-- Legal Section -->
+    <div id="legal">
+      <p>
+        <!-- Copyright symbol as a special character -->
+        Copyright &copy; |
+        <a href="./placeholder.html">Privacy</a> |
+        <a href="./placeholder.html">Terms and Conditions</a> |
+        <a href="./placeholder.html">Site Map</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
