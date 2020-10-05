@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Music || The Plug Magazine </title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png" sizes="32x32" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Description to optimise SEO -->
+  <meta name="description" content="Explore what is happening in the world with The Plug magazine for all your daily news" />
+ <!-- Limiting to 10 top key words -->
+  <meta name="keywords" content="newspaper, magazine, news, music, fashion, sports, headlines, culture, student" />
+  <meta name="author" content="James Carpenter" />
+  <!-- Normalize CSS is a third party CSS file that we have used to ensure cross-browser compatability and responsiveness -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
+  <!-- External stylesheet containing most styling information of the page -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <script src="./assets/js/responsive_menu.js"></script>
+  <!-- External CSS for 3rd party font-awesome icons  -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <!-- Top and main Navigation bars goes into header tag -->
+  <header>
+    <!-- Top level navigation bar-->
+    <div id="top-nav">
+      <nav>
+        <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+        <ul>
+          <li><a href="./placeholder.html">About</a></li>
+          <li><a href="./placeholder.html">Careers</a></li>
+          <li><a href="./placeholder.html">Mobile App</a></li>
+        </ul>
+      </nav>
+      <!-- search input goes into top navigation area, but is not a navigational link therefore is excluded from the <nav> tag . Form tag used for semantics-->
+      <form>
+        <input type="search" name="site-search" placeholder="Search for key words..." />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <!-- Main navigation bar - includes icon that links to home page and the 2 other submission pages -->
+    <nav id="main-nav">
+      <div id="logo">
+        <!-- Image tag nested within anchor tags for creating hyperlink to image  -->
+        <a href="./index.html">
+          <img src="./assets/images/logo_250.png" onmouseover="this.src='./assets/images/logo_hover_250.png'" onmouseout="this.src='./assets/images/logo_250.png'" alt="The Plug Magazine"/>
+        </a>
+      </div>
+      <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+      <ul>
+          <li><a id="news-link" href="./news.html">News</a></li>
+          <li><a id="music-link" href="./music.html">Music</a></li>
+          <li><a id="fashion-link" href="./fashion.html">Fashion</a></li>
+          <li><a id="sports-link" href="./sports.html">Sports</a></li>
+      </ul>
+      <!--  Drop down navigation (menu) for responsive tablet and mobile views, called with CSS media queries -->
+      <div id="dropdown">
+        <!-- Button icon for users to click to show contents -->
+        <button id="dropbtn">Menu
+          <i class="fas fa-bars">
+          </i>
+        </button>
+        <!-- Contents of the navigational menu bar in responsive mode  -->
+        <div id="dropdown-content">
+          <a id="news-link-dropdown" href="./news.html">News</a>
+          <a id="music-link-dropdown" href="./music.html">Music</a>
+          <a id="fashion-link-dropdown" href="./fashion.html">Fashion</a>
+          <a id="sports-link-dropdown" href="./sports.html">Sport</a>
+        </div>
+      </div >
+    </nav>
+  </header>
+    
+  <!-- Main plan visit page content -->
+  <main>
+    <!-- Page title section -->
+    <div class="page-title">
+      <!-- Page title - h1 tag for web crawlers to identify starting point of page -->
+      <h1 id="music-heading">MUSIC</h1>
+    </div>
+
+    <!-- Banner Image section -->
+    <div id="music-banner">
+      
+    </div>
+
+    <!-- div container to wrap main contents -->
+    <div class="wrapper">
+      <!-- Information on operating hours of the park, encapsulated within a section tag -->
+      
+        
+        <section id="release-radar">
+            <h2>RELEASE RADAR</h2>
+            
+            <h5>SINGLES</h5>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Genre</th>  
+                </tr>
+                <tr>
+                    <td>Saturday 19th September</td>
+                    <td>Branded</td>
+                    <td>The Brawlers</td>
+                    <td>Indie Rock</td>
+                </tr>
+                <tr>
+                    <td>Thursday 24th September</td>
+                    <td>Time to Get Going</td>
+                    <td>Felix Denver</td>
+                    <td>R&amp;B</td>
+                </tr>
+                <tr>
+                    <td>Saturday 26th September</td>
+                    <td>Fake Smiling</td>
+                    <td>Warmin</td>
+                    <td>Grime</td>
+                </tr>
+                <tr>
+                    <td>Tuesday 29th September</td>
+                    <td>Global Taking</td>
+                    <td>Jacob Jnr.</td>
+                    <td>Hip Hop</td>
+                </tr>
+                <tr>
+                    <td>Friday 2nd October</td>
+                    <td>Wonder Lust</td>
+                    <td>Figment</td>
+                    <td>Metal</td>
+                </tr>
+            </table>
+            <h5>ALBUMS</h5>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Genre</th>  
+                </tr>
+                <tr>
+                    <td>Saturday 19th September</td>
+                    <td>Beaten Track</td>
+                    <td>Soft Barrel</td>
+                    <td>Folk</td>
+                </tr>
+                <tr>
+                    <td>Saturday 26th September</td>
+                    <td>Queens Crown</td>
+                    <td>Rae Folly</td>
+                    <td>Soul</td>
+                </tr>
+                <tr>
+                    <td>Saturday 3rd October</td>
+                    <td>Tundra</td>
+                    <td>The Humbugs</td>
+                    <td>Indie Rock</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="stormzy">
+            <div class="featured-item left-align">
+           
+            <div class="featured-item-image">
+            <img src="./assets/images/stormzy-article.jpg" alt="Stormzy - Heavy Is The Head album cover">
+            
+            </div>
+            <div class="featured-item-text">
+            <h2>Single Review: Stormzy - Superheroes</h2>
+            <p>Trying to follow up on an amazing first album is a tough trait for any musician, but for an artist like Stormzy it is the make or break of his career. In 2017 we were gifted with the debut album Gang Signs and Prayers which seemed to blend a mix of harcore grime and soft gospel-esque singles. After listening to Superheroes I feel as though he successfully mixed the two.
+            <br><br>
+            The message here is one of inspiration and love to the Black British youth and, as well as being uplifting and powerful, it is also one of his best songs to date. The beat feels nostalgic and the lyrics really put an emphasis of loving who you are and the heritage you came from. There are numerous references to influencial black artists who have excelled in their field such as the author Mallory Blackman, musicians Dave, Nina Simone and comedian Michael Dapaah that help to bring this message in full circle. 
+            <br><br>
+            On a hugely successful second album, this single stands out as one of the highlights of an artist who can really inspire the future generation.
+            </p>
+            <p><b>9/10</b></p>
+            <p>Spotify link below:</p>
+            <iframe src="https://open.spotify.com/embed/album/01D51QmmOz0eGtVySOG57C" width="300" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            </div>
+        </section>
+        
+        <section id="vixans">
+            <div class="featured-item">
+           
+            <div class="featured-item-image">
+            <figure class="video-figure">
+            <video class="video" width="512" height="288" controls>
+            <source src="./assets/videos/Really%20Gotta%20Go-VIXANS.mp4" type="video/mp4" alt="video for Really Gotta Go by VIXANS">
+            Your browser does not support the video tag.
+            </video>
+            <!-- Caption to provide credit to the source -->
+            <figcaption>Video from <a href="https://www.youtube.com/watch?v=wbtYK6yN3SY">YouTube.</a></figcaption>
+            </figure>
+            </div>
+            <div class="featured-item-text">
+                
+            <h2>New Music Video For "Really Gotta Go" By VIXANS </h2>
+            <p>After releasing two singles at the beginning of the year, VIXANS have released their new song Really Gotta Go with an accompanying music video.
+            <br><br>
+            The video encorperates everything we know about the band so far, they focus on playing the music the way they want and it is up to the listener if they follow them for the ride or not. The music video mirrors this with a simple recording of the song in what seems to be filmed in a standard rehersal room with the story being told in the music. No fancy sets or clever camera work has gone into the video, just a raw performance featuring the three band members. 
+            <br><br>
+            The simplicity actually makes the song stand out more and we can't wait to see whats in store for them in the coming months.
+            </p>
+            <br><br>
+            </div>
+            </div>
+        
+        </section>
+        <section id="venue-closure">
+            <div class="featured-item left-align">
+            <div class="featured-item-image">
+            <img src="./assets/images/venue-closure-article.jpg" alt="Sam Fender outside the Virgin Money Arena">
+            </div>
+            <div class="featured-item-text">
+                
+            <h2>New Lockdown Rules Mean The Closure of Newcastle's Virgin Money Arena Social Distance Shows</h2>
+            <p> Just as we started to see normality rear its head in the easing of luckdown, tragedy has struck again for music fans
+            <br><br>
+            In the last few weeks there were a number of artists performing in the newly built Virgin Money Arena that was created to allow music fans to see their favourite artists live while still following the COVID lockdown rules. The reviews from the gigs were positive and it seemed as though this could be the new way to get our dose of music through the forseeable future until the pandemic died down.
+            <br><br>
+            However, due to new lockdown rules in the north of England, these remaining gigs have had to be cancelled and the future of the venue is uncertain. Artists such as Chase and Staus and Kaiser Cheifs were set to play this weekend before the ruling. 
+            <br><br>
+            Here's to hoping a new solution comes out soon.
+            </p>
+            
+            </div>
+            
+            </div>
+        </section>
+        
+        <section id="playlist">
+       
+     
+        <h2>What we're listening to:</h2>
+        
+        <p>If you are looking for a fix of new and old music that the team have been playing on repeat then check out our playlist on Spotify below:</p>
+        <br>
+       
+        <iframe id="playlist-link" src="https://open.spotify.com/embed/playlist/3FV4RAWWpQ5lMXGofkuTLb" width="auto" height=auto frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+      </section>
+            
+
+      
+    </div>
+    
+  </main>
+
+  <footer>
+    <!-- The footer contains 2 sections - social and contact information and a navigation  -->
+   <div class="footer-inner">
+    <div id="footer-top">
+      <div class="footer-content" id="social">
+        <!-- Subscription sign-up -->
+        <div id="subscription">
+          <h4>SUBSCRIBE TO THE PLUG NEWSLETTER</h4>
+          <!-- Email address to be entered by user - input tag takes in user input -->
+          <input type="email" name="subscribe-email" placeholder="Enter Email..."/>
+          <!-- Subscribe button- button tag gives semantic meaning -->
+          <button type="submit">Subscribe</button>
+        </div>
+        <!-- Social media links -->
+        <div  id="social-media">
+          <h4>Follow Us:</h4>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/">
+                <img src="./assets/images/facebook-150.png" alt="Facebook" width="40" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/">
+                <img src="./assets/images/twitter-150.png" alt="Twitter" width="40" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <img src="./assets/images/instagram-150.png" alt="Instagram" width="40" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Contact information -->
+      <div class="footer-content" id="address">
+        
+        <h4>Get in touch:</h4>
+        <address>
+          <!-- mailto attribute allows browser to call mailing application   -->
+          <p>
+            <!-- hide text but keep for screen readers -->
+            <span class="hidden">Email:</span>
+            <i class='far fa-envelope fa-lg' ></i>
+            <a href="mailto:enquiries@planetaryxpark.com">info@theplug_magazine.com</a>
+          </p>
+          <!-- tel attribute allows browser to call phone application   -->
+          <p>
+            <!-- hide text but keep for screen readers -->
+            <span class="hidden">Call Us:</span>
+            <i class='fas fa-phone-alt fa-lg'></i>
+            <a href="tel:+012345432234">+44 23456789</a> (9am-5pm) Monday - Friday
+          </p>
+        </address>
+      </div>
+    </div>
+   </div>
+
+    <!-- Footer Navigation -->
+    <nav id="footer-nav">
+      <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+      <ul>
+        <li><a href="./placeholder.html">About</a></li>
+        <li><a href="./placeholder.html">Careers</a></li>
+        <li><a href="./placeholder.html">Lost &amp; Found</a></li>
+        <li><a href="./tickets.html">Tickets &amp; Promos</a></li>
+        <li><a href="./plan.html">Plan Visit</a></li>
+      </ul>
+    </nav>
+
+    <!-- Legal Section -->
+    <div id="legal">
+      <p>
+        <!-- Copyright symbol as a special character -->
+        Copyright &copy; |
+        <a href="./placeholder.html">Privacy</a> |
+        <a href="./placeholder.html">Terms and Conditions</a> |
+        <a href="./placeholder.html">Site Map</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

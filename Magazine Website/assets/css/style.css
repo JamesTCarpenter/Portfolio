@@ -1,0 +1,1260 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/*
+    Table of Contents
+    =================
+    1. Global Styles
+    2. Header Styles
+    3. Main Content Styles
+    4. Homepage Specific Styles
+    5. NEWS Specific Styles
+    6. MUSIC Specific Styles
+    7. FASHION Specific Styles
+    7. SPORTS Specific Styles
+    8. Footer Styles
+    9. Media Quires
+*/
+
+/* ------ 1. Global styles ------ */
+body {
+  background-color: #F8F4F9;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+h1{
+  color: #2A6329;
+  font-family: 'Prata', 'Times New Roman', serif;
+}
+h2,
+h3 {
+  font-family: 'Prata', 'Times New Roman', serif;
+}
+h4 {
+  font-size: 20px;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.button,
+span.button {
+  /* Style all button class links with same dimensions and block display, so that they can be positioned non-statically in different cases */
+  display: block;
+  width: 170px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: #000000;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: normal;
+  border: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav ul a {
+  padding: 10px 20px;
+}
+
+/* ------ 2. Header styles ------ */
+
+header {
+  /* Fix the header so that it stays visible as you scroll the page */
+  position: fixed;
+  /* Set the z-index to 2 so that it overlaps any non-statically positioned elements */
+  z-index: 2;
+  top: 0;
+  width: 100%;
+}
+#top-nav {
+  height: 30px;
+  padding: 5px 2%;
+  /* Display top nav elements in a non-wrapping row with flexbox */
+  display: flex;
+  flex-direction: row;
+  /* Set flex items to display on the left end of the container */
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #000000;
+
+}
+#top-nav ul {
+  /* Nest nav ul list items in a non-wrapping row with flexbox */
+  display: flex;
+  flex-direction: row;
+}
+/* Align search field and button vertically */
+#top-nav input {
+  height: 26px;
+  border: none;
+  vertical-align: middle;
+}
+#top-nav form button {
+  height: 26px;
+  padding: 1px 8px;
+  border: none;
+  vertical-align: middle;
+  background: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+#main-nav {
+  height: 100px;
+  padding: 0 2%;
+  /* Display main nav elements in a non-wrapping row with flexbox  */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+}
+#main-nav ul {
+  /* Nest nav ul list items in a non-wrapping row with flexbox */
+  display: flex;
+  flex-direction: row;
+}
+#logo img {
+  background-color:black;
+}
+#top-nav a,
+#main-nav a {
+  color: #ffffff;
+}
+#main-nav ul a {
+  padding: 35px;
+  text-transform: uppercase;
+    font-weight: bold;
+}
+#news-link:hover {
+    background-color: red;
+    text-decoration: none;
+}
+#music-link:hover {
+    background-color: rebeccapurple;
+    text-decoration: none;
+}
+#fashion-link:hover {
+    background-color: salmon;
+    text-decoration: none;
+}
+#sports-link:hover {
+    background-color: blue;
+    text-decoration: none;
+}
+
+/* Do not show menu bar in desktop view */
+#dropdown {
+  display: none;
+}
+
+/* ------ 3. Main content styles ------ */
+
+main {
+  /* Push down the main section to fit underneath the fixed header */
+  margin-top: 140px;
+  width: 100%;
+}
+main a {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #000000;
+}
+.wrapper {
+  margin: 0 5%;
+}
+.wrapper > section {
+  margin: 15px 0;
+  padding: 60px 8%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.page-title {
+  margin-top: 15px;
+
+  background-color: #ffffff;
+  text-align: center;
+}
+.video-figure {
+  /* Set video figures to center contents evenly on the page, based on recommended max-width of 512px for 320p-resolution videos */
+  max-width: 512px;
+  margin: 20px auto 0;
+}
+.video {
+  /* Set the video to size responsively to narrower browser widths */
+  max-width: 100%;
+  height: auto;
+}
+figcaption {
+  font-size: 12px;
+}
+.featured-item {
+  margin: 50px 0;
+  /* Use flexbox to display text to right of image */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.featured-item.left-align {
+  /* Set left-aligned items to reverse order of elements so that text displays on the left of image */
+  flex-direction: row-reverse;
+}
+.featured-item-image {
+  /* Set each image to fill 35% of the row */
+  flex-basis: 35%;
+}
+.featured-item-image img {
+  /* Make the images size responsively to adjustments in browser width */
+  height: auto;
+  width: 100%;
+}
+.featured-item-text {
+  padding: 10px 30px;
+  /* Set each text area to fill 65% of the row */
+  flex-basis: 65%;
+}
+
+/* ------ 4. Homepage specific styles ------ */
+
+
+.index-header{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+#featured-lands {
+  border-radius: 15px;
+  background-color: #000000;
+}
+#featured-lands h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+#featured-lands .container {
+  /* Display items in a non-wrapping row with flexbox*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.featured-land {
+  /* Set position to relative so buttons can position absolutely */
+  position: relative;
+  height: 280px;
+  margin: 0 1%;
+  /* Set items to not shrink narrower than 280px */
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 280px;
+}
+#featured-lands img {
+  /* Make images fill the div and center regardless of size */
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+.featured-land img:hover {
+  opacity: 0.4;
+}
+#featured-lands .button {
+  /* Set the buttons to display over the images */
+  position: absolute;
+  top: 70%;
+  left: 0;
+  right: 0;
+  /* use auto margins to center in the container */
+  margin: 0 auto;
+  cursor: pointer;
+}
+#music-index{
+    color: rebeccapurple;
+}
+#fashion-index{
+    color: coral;
+}
+#sports-index{
+    color: blue;
+}
+#news-button:hover{
+    background-color: red;
+}
+#music-button:hover{
+    background-color: rebeccapurple;
+}
+#fashion-button:hover{
+    background-color: salmon;
+}
+#sports-button:hover{
+    background-color: blue;
+}
+
+/* ------ 5. NEWS specific styles ------ */
+
+#news-heading {
+    color: white;
+    background-color: red;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+}
+#news-banner{
+  height: 300px;
+  background-image: url('../images/news-banner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+/* ------ 6. MUSIC specific styles ------ */
+
+#music-heading {
+    color: white;
+    background-color: rebeccapurple;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#music-banner{
+  height: 300px;
+  background-image: url('../images/music-banner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#release-radar, #playlist{
+    background-color: rebeccapurple;
+    color: white;
+}
+#playlist-link{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* ------ 7. FASHION specific styles ------ */
+
+#fashion-heading {
+    color: white;
+    background-color: salmon;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#fashion-banner{
+  height: 300px;
+  background-image: url('../images/fashion-banner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#featured-store{
+    background-color: salmon;
+    color: white;
+}
+#featured-store a{
+    color: white;
+}
+#getting-here-map{
+  /* Set flex item to a consistent 60% wide */
+  flex-basis: 60%;
+}
+
+/* For slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* ------ 8. SPORTS specific styles ------ */
+
+#sports-heading {
+    color: white;
+    background-color: blue;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#sports-banner{
+  height: 300px;
+  background-image: url('../images/sports-banner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#tables{
+    background-color: blue;
+    color: white;  
+}
+#tables h2{
+    text-align: center;  
+}
+
+
+#tables h4, #tables h5{
+    text-align: center;
+}
+#tables img{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;    
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+    color: black;
+}
+tr:nth-child(odd) {
+  background-color: #FFFFFF;
+    color: black;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.sports-table{
+    position: relative;
+    margin: 0 1.6%;
+    padding: 25px 0 70px;
+    border-radius: 20px;
+    /* Set flex items to a consistent 30% wide */
+    flex-basis: 30%;
+    background-color: blue;
+    color: white;
+}
+#tables .container{
+    margin-top: 40px;
+    /* Set the three passes as flex items in a flexbox container layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* ------ 6. Plan visit specific styles ------ */
+
+
+#call-to-action-banner p {
+  /* Place the banner text part way down the banner */
+  position: relative;
+  top: 15%;
+  width: 30%;
+  margin: 0 auto;
+  padding: 15px 30px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+#call-to-action-banner a {
+  /* Place the call to action button part way down the banner */
+  position: relative;
+  top: 20%;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+#hours-events .container {
+  /* Display items in a non-wrapping row with flexbox */
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.event {
+  /* Position relatively so that child elements can have absolute positioning */
+  position: relative;
+  height: 300px;
+  margin: 0 20px 0 0;
+  /* Set flex items to a maximum of 300px wide */
+  flex-basis: 300px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  border-radius: 20px;
+  box-shadow: 0 15px 16px 0 rgba(0,0,0,0.2);
+}
+.event-date {
+  width: 20%;
+  padding: 10px 2% 10px 3%;
+  border-radius: 20px 0 0 0;
+  background-color: #368190;
+  color: #ffffff;
+}
+.event-date p {
+  margin: 5px 10px;
+}
+.event-month {
+  text-transform: uppercase;
+}
+.event-day {
+  font-size: 1.3em;
+}
+.event-label {
+  /* Position absolutely to place at bottom of container */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 0 0 20px 20px;
+  background-color: #368190;
+  color: #ffffff;
+}
+.event-label h3,
+.event-label p {
+  margin: 15px 5%;
+}
+/* Load background images optimized and scaled for this layout */
+#hieroglyphics {
+  background-image: url('../images/hieroglyphics-300.jpg');
+  background-size: cover;
+}
+#helix-bridge {
+  background-image: url('../images/helix-bridge-300.jpg');
+  background-size: cover;
+}
+#footprint {
+  background-image: url('../images/human-footprint-300.jpg');
+  background-size: cover;
+}
+#getting-here .container {
+  /* Display sub-divs in a non-wrapping row with flexbox */
+  display: flex;
+  flex-direction: row;
+}
+#getting-here-map {
+  /* Set flex item to a consistent 60% wide */
+  flex-basis: 60%;
+}
+#getting-here-map iframe {
+  width: 100%;
+}
+#getting-here-links {
+  /* Set flex item to a consistent 40% wide */
+  flex-basis: 40%;
+  /* Nest another flex container here to display link items in a vertical column */
+  display: flex;
+  flex-direction: column;
+}
+.getting-here-link {
+  width: 80%;
+  margin: 10px 10%;
+  /* Set the link items to fill the vertical height and share it equally */
+  flex-basis: 50%;
+}
+#parking {
+  background-image: url('../images/parking-620.jpg');
+  background-position: center;
+  background-size: cover;
+}
+#shuttle-service {
+  background-image: url('../images/shuttleservice-620.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.getting-here-link a {
+  position: relative;
+  top: 70%;
+  margin: 0 auto;
+}
+#services .container {
+  /* Display items in a wrapping row with flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.service {
+  /* Set each flex item to one third of row, so that we have overflow to two rows */
+  flex-basis: 30%;
+  height: 250px;
+  margin: 1.6%;
+  /* Spread out and center background images for each flex item */
+  background-size: cover;
+  background-position: center;
+}
+/* Load images sized for desktop container widths */
+#hotels {
+  background-image: url('../images/hotels-400.jpg');
+}
+#lost-and-found {
+  background-image: url('../images/lostandfound-400.jpg');
+}
+#ride-restrictions {
+  background-image: url('../images/riderestrictions-400.jpg');
+}
+#safety-and-rules{
+  background-image: url('../images/safetyandrules-400.jpg');
+}
+#pets{
+  background-image: url('../images/pets-400.jpg');
+}
+#park-facilities{
+  background-image: url('../images/facilities-400.jpg');
+}
+.service a {
+  /* Center link buttons over the images */
+  position: relative;
+  top : 70%;
+  margin: 0 auto;
+}
+
+/* ------ 7. Footer styles ------ */
+
+footer {
+  padding-bottom: 0;
+  background-color: #000000;
+   
+}
+#footer-top {
+  height: inherit;
+  padding: 20px;
+  /* Display the main footer sections as a flexbox row */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  background-color: #000000;
+  color: #ffffff;
+}
+#footer-top a {
+  color: #ffffff;
+}
+.footer-content {
+  width: 50%;
+  max-width: 500px;
+  margin: 0 5%;
+}
+
+#subscription input {
+  width: 220px;
+  height: 40px;
+  text-align: center;
+}
+#subscription button {
+  width: 150px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+#social-media {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+#social-media ul {
+  /* Display the media links as a flexbox row */
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+#social-media li {
+  padding: 0 10px;
+}
+#address h4 {
+  margin: 26px 0 0;
+}
+#address h4 i {
+  padding-left: 10px;
+}
+#address address i {
+  padding-right: 10px;
+}
+#address .fa-map-marker-alt {
+  float: none;
+  margin-top: 6px;
+  padding: 0 7px 0 0;
+  display: inline-block;
+  vertical-align: 7px;
+}
+#address .address br {
+  display:none;
+}
+#address .hidden {
+  display: none;
+}
+address.address-details {
+  display: inline-block;
+  font-style: normal;
+}
+#footer-nav {
+  padding: 20px 0;
+    background-color: white;
+
+}
+#footer-nav ul {
+  margin: 0 20%;
+  /* Display the footer navigation links as a flexbox row */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#legal {
+  margin: 0;
+  text-align: center;
+  line-height: 1.5em;
+  background: #ddd;
+  padding: 15px 0;
+}
+#legal p {
+  margin: 0;
+}
+
+/* ------ 8. Media Queries ------ */
+
+/* ------ Desktop Medium Width Viewing ------ */
+@media only screen and (max-width: 1600px) {
+
+  /* ------ Homepage specific styles ------ */
+
+  /* Resize featured land images for narrower browser widths */
+  .featured-land {
+    height: 250px;
+    flex-basis: 250px;
+  }
+  #featured-lands img {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+
+  /* ------ Homepage specific styles ------ */
+
+  /* Resize featured land images for narrower browser widths */
+  .featured-land {
+    height: 200px;
+    flex-basis: 200px;
+  }
+  #featured-lands img {
+    height: 200px;
+  }
+}
+
+/* ------ Tablet Viewing ------ */
+@media only screen and (max-width: 1024px) {
+
+  /* ------ Header styles ------ */
+  /* Hide existing navigation to switch to drop-down navigation */
+  #top-nav li,
+  #main-nav li {
+    display: none;
+  }
+  #dropdown {
+    /* Make the drop-down navigation visible */
+    display: block;
+  }
+  #dropbtn {
+    margin-right: 20px;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+      font-weight: bold;
+  }
+  #dropbtn:hover,
+  #dropbtn:focus {
+    outline: #000000;
+  }
+  #dropbtn:active > i {
+    /* Add a rotation effect on click */
+    transform: rotate(90deg);
+  }
+  #dropdown-content {
+    /* By default, do not display. Only display on click, set through responsive_menu.js. We understand this will not be marked but include it for completion's sake. */
+    display: none;
+    position: absolute;
+    top: 110px;
+    width: 35vw;
+    max-width: 140px;
+    background-color: #000000;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  #dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  #news-link-dropdown:hover {
+    background-color: red;
+  }
+    #music-link-dropdown:hover {
+    background-color: rebeccapurple;
+  }
+    #fashion-link-dropdown:hover {
+    background-color: coral;
+  }
+    #sports-link-dropdown:hover {
+    background-color: blue;
+  }
+
+  /* ------ Main content styles ------ */
+  .featured-item-image {
+    /* Change flex-items to share the width equally */
+    flex-basis: 50%;
+    margin-bottom: 30px;
+  }
+  .featured-item-text {
+    /* Change flex-items to share the width equally */
+    flex-basis: 50%;
+    padding: 0 30px;
+  }
+  .featured-item-text h3 {
+    margin: 0;
+  }
+
+  /* ------ Homepage specific styles ------ */
+  #featured-lands .container {
+    /* Switch featured lands to column flex layout */
+    flex-direction: column;
+  }
+  .featured-land {
+    margin: 15px 0;
+  }
+ /* ------ Tickets and promos specific styles ------ */
+
+    #tables .container {
+    /* Change to column flex layout */
+    flex-direction: column;
+  }
+  .sports-tables {
+    /* Change each pass to a grid layout */
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 20% 50% 30%;
+    padding: 5px;
+    margin: 5px;
+  }
+  .sports-tables h3 {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 10px 60px;
+    text-align: left;
+    font-size: 2vw;
+  }
+  .sports tables img {
+    grid-column: 1;
+    grid-row: 2/3;
+    height: auto;
+    padding: 20px 0;
+  }
+  .sport-tables table {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 30px 15px;
+    margin: 0;
+    font-size: 1.5vw;
+  }
+  #group-bookings .featured-item-image,
+  #event-bookings .featured-item-image {
+    margin-bottom: 0;
+  }
+
+  /* ------ Plan visit specific styles ------ */
+  #hours-events .container {
+    /* Change to column flex layout */
+    flex-direction: column;
+  }
+  .event {
+    margin: 15px 0;
+  }
+  /* Reload images wide enough to fill the container */
+  #hieroglyphics {
+    background-image: url('../images/hieroglyphics-775.jpg');
+  }
+  #helix-bridge {
+    background-image: url('../images/helix-bridge-775.jpg');
+  }
+  #footprint {
+    background-image: url('../images/human-footprint-775.jpg');
+  }
+  .service {
+    /* Set each flex item to half of row, so that we have overflow to three rows */
+    flex-basis: 48%;
+    margin: 1%;
+  }
+
+  /* ------ Footer styles ------ */
+  #footer-top {
+    /* Switch to block display to allow elements to flow naturally down the page */
+    display: block;
+    padding: 20px 10px 31px;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-content {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+  #social-media {
+    margin-top: 20px;
+  }
+    
+  #subscription input {
+    width: 180px;
+    height: 30px;
+  }
+  #subscription button {
+    width: 120px;
+    height: 40px;
+    font-size: 13px;
+  }
+  #social-media {
+    display: block;
+  }
+  #social-media ul {
+    padding: 0;
+    /* Set the flexbox to center content */
+    justify-content: center;
+  }
+  #social-media li {
+    padding: 0 5px;
+  }
+  #address {
+    position: relative;
+  }
+  .address-details {
+    display: inline-block;
+    font-style: normal;
+  }
+  .address-details p {
+    text-align: left;
+  }
+  #address .fa-map-marker-alt {
+    display: inline-block;
+    vertical-align: 6px;
+    padding-right: 10px;
+  }
+  #footer-nav ul {
+    margin: 0 10%;
+  }
+}
+
+/* ------ Mobile Viewing ------ */
+@media only screen and (max-width: 812px) {
+
+  /* ------ Main content styles ------ */
+  .featured-item,
+  .featured-item.left-align {
+    /* Change each featured item to display contents vertically */
+    flex-direction: column;
+  }
+  .featured-item-image {
+    margin-bottom: 10px;
+  }
+  .featured-item-image img {
+    width: auto;
+    max-width: 100%;
+  }
+  /* Set the "left" aligned items to float right to create balance from one section to the next */
+  .featured-item.left-align .featured-item-image img,
+  .featured-item.left-align .featured-item-text a {
+    float: right;
+  }
+  .featured-item.left-align .featured-item-text {
+    text-align: right;
+  }
+  .featured-item-text {
+    padding: 30px 0;
+  }
+
+  /* ------ Homepage specific styles ------ */
+  #home-banner {
+    height: 300px;
+    /* Remove animation for mobile devices */
+    animation: none;
+  }
+  #home-banner h1 {
+    font-size: 3vw;
+  }
+
+  /* ------ Tickets and promos specific styles ------ */
+  .pass {
+    /* Reduce columns to one */
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 30% 20% 20%;
+    height: 400px;
+  }
+  .pass h3 {
+    text-align: center;
+    font-size: 16px;
+  }
+  .pass img {
+    grid-row: 2;
+    height: 100%;
+    width: auto;
+    padding: 0;
+  }
+  .pass ul {
+    grid-column: 1;
+    grid-row: 3;
+    padding: 10px 15px;
+    text-align: center;
+    list-style-position: inside;
+    font-size: 15px;
+  }
+  .pass .button {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 25vw;
+    width: auto;
+    margin-bottom: -10px;
+  }
+  #group-bookings .featured-item,
+  #event-bookings .featured-item {
+    margin-bottom: 0;
+  }
+
+  /* ------ Plan visit specific styles ------ */
+  #call-to-action-banner {
+    height: 200px;
+  }
+  #call-to-action-banner p {
+    font-size: 3vw;
+  }
+  #getting-here .container {
+    /* Switch layout to grid */
+    display: grid;
+    grid-template-rows: 400px 400px;
+  }
+  #getting-here-links {
+    grid-row: 2;
+    /* Remove flexbox on nested images */
+    display: block;
+  }
+  #getting-here-map iframe {
+    height: 100%;
+  }
+  .getting-here-link {
+    /* Give fixed sizes to these divs */
+    height: 200px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  #services .container {
+    /* Change items to flow as a column */
+    flex-direction: column;
+  }
+  .service {
+    /* Set flex-basis per item to 250px tall */
+    flex-basis: 250px;
+    margin: 1.2% 0;
+  }
+  /* Reload images wide enough to fill the container */
+  #hotels {
+    background-image: url('../images/hotels-600.jpg');
+  }
+  #lost-and-found {
+    background-image: url('../images/lostandfound-600.jpg');
+  }
+  #ride-restrictions {
+    background-image: url('../images/riderestrictions-600.jpg');
+  }
+  #safety-and-rules{
+    background-image: url('../images/safetyandrules-600.jpg');
+  }
+  #pets{
+    background-image: url('../images/pets-600.jpg');
+  }
+  #park-facilities{
+    background-image: url('../images/facilities-600.jpg');
+  }
+
+  /* ------ Footer styles ------ */
+  #footer-nav ul {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: inherit;
+  }
+  #footer-nav li {
+    padding: 8px 0;
+  }
+  #legal {
+    line-height: 1.5em;
+  }
+  #social {
+    margin-bottom: 40px;
+  }
+  #legal {
+    margin: 0;
+    background: #ddd;
+    padding: 15px 0 ;
+  }
+  #legal p {
+    margin: 0;
+  }
+}
+
+/* ------ Small screens ------ */
+@media only screen and (max-width: 600px) {
+
+  /* ------ Footer styles ------ */
+  #footer-nav ul {
+    /* Remove the flexbox and allow items to flow vertically */
+    display: block;
+    text-align: center;
+  }
+  #footer-nav {
+    padding: 20px 0;
+  }
+  footer {
+    padding-bottom: 0;
+  }
+  #legal {
+    margin: 0;
+    background: #ddd;
+    padding: 15px 0 ;
+  }
+  #legal p {
+    margin: 0;
+  }
+}
+
+/* ------ Small screens ------ */
+@media only screen and (max-width: 500px) {
+
+  /* ------ Header styles ------ */
+  #dropdown {
+    width: 30vw;
+    text-align: right;
+  }
+  #dropbtn {
+    margin-right: 0;
+    padding: 20px 10px;
+    font-size: 18px;
+  }
+
+  /* ------ Homepage specific styles ------ */
+  #home-banner h1 {
+    /* Set a minimum font size */
+    font-size: 14px;
+  }
+
+  
+
+  /* ------ Plan visit specific styles ------ */
+  #call-to-action-banner p {
+    /* Set a minimum font size */
+    font-size: 14px;
+  }
+
+  /* ------ Footer styles ------ */
+  #subscription button {
+    /* Add margins for when button falls below the input field */
+    margin: 10px;
+  }
+}

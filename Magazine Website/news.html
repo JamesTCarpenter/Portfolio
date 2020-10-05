@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> News || The Plug Magazine </title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png" sizes="32x32" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Description to optimise SEO -->
+  <meta name="description" content="Explore what is happening in the world with The Plug magazine for all your daily news" />
+ <!-- Limiting to 10 top key words -->
+  <meta name="keywords" content="newspaper, magazine, news, music, fashion, sports, headlines, culture, student" />
+  <meta name="author" content="James Carpenter" />
+  <!-- Normalize CSS is a third party CSS file that we have used to ensure cross-browser compatability and responsiveness -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
+  <!-- External stylesheet containing most styling information of the page -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <script src="./assets/js/responsive_menu.js"></script>
+  <!-- External CSS for 3rd party font-awesome icons  -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <!-- Top and main Navigation bars goes into header tag -->
+  <header>
+    <!-- Top level navigation bar-->
+    <div id="top-nav">
+      <nav>
+        <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+        <ul>
+          <li><a href="./placeholder.html">About</a></li>
+          <li><a href="./placeholder.html">Careers</a></li>
+          <li><a href="./placeholder.html">Mobile App</a></li>
+        </ul>
+      </nav>
+      <!-- search input goes into top navigation area, but is not a navigational link therefore is excluded from the <nav> tag . Form tag used for semantics-->
+      <form>
+        <input type="search" name="site-search" placeholder="Search for key words..." />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <!-- Main navigation bar - includes icon that links to home page and the 2 other submission pages -->
+    <nav id="main-nav">
+      <div id="logo">
+        <!-- Image tag nested within anchor tags for creating hyperlink to image  -->
+        <a href="./index.html">
+          <img src="./assets/images/logo_250.png" onmouseover="this.src='./assets/images/logo_hover_250.png'" onmouseout="this.src='./assets/images/logo_250.png'" alt="The Plug Magazine"/>
+        </a>
+      </div>
+      <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+      <ul>
+          <li><a id="news-link" href="./news.html">News</a></li>
+          <li><a id="music-link" href="./music.html">Music</a></li>
+          <li><a id="fashion-link" href="./fashion.html">Fashion</a></li>
+          <li><a id="sports-link" href="./sports.html">Sports</a></li>
+      </ul>
+      <!--  Drop down navigation (menu) for responsive tablet and mobile views, called with CSS media queries -->
+      <div id="dropdown">
+        <!-- Button icon for users to click to show contents -->
+        <button id="dropbtn">Menu
+          <i class="fas fa-bars">
+          </i>
+        </button>
+        <!-- Contents of the navigational menu bar in responsive mode  -->
+        <div id="dropdown-content">
+          <a id="news-link-dropdown" href="./news.html">News</a>
+          <a id="music-link-dropdown" href="./music.html">Music</a>
+          <a id="fashion-link-dropdown" href="./fashion.html">Fashion</a>
+          <a id="sports-link-dropdown" href="./sports.html">Sport</a>
+        </div>
+      </div >
+    </nav>
+  </header>
+    
+  <!-- Main plan visit page content -->
+  <main>
+    <!-- Page title section -->
+    <div class="page-title">
+      <!-- Page title - h1 tag for web crawlers to identify starting point of page -->
+      <h1 id="news-heading">NEWS</h1>
+    </div>
+
+    <!-- Banner Image section -->
+    <div id="news-banner">
+      
+    </div>
+
+    <!-- div container to wrap main contents -->
+    <div class="wrapper">
+      <!-- Information on operating hours of the park, encapsulated within a section tag -->
+        <section id="rent">
+            <div class="featured-item left-align">
+            <div class="featured-item-image">
+            <img src="./assets/images/rent-article.jpg" alt="for lease sign">
+            </div>
+            <div class="featured-item-text">
+            <h2> Landlord Are Cutting Rent In Major Cities By Up To 20% Due To Pandemic</h2>
+            <h5>(17th September 2020)</h5>
+            <p> There seems to be a lot of negatives to 2020 so far but things could be looking up for people wanting to rent in major cities in the UK
+            <br><br>
+            The reason behind this major change in the housing ecomony is due to the fact that tenants want to escape from the busy city atmosphere in hopes this reduces their risk of catching COVID. They have been noted to be relocate to bigger properties in more rural parts of the country and as a result has seen the market in metropolitan areas reduce drastically. Another major reason is the number of international students has decreased rapidly since the start of the pandemic.
+            <br><br>
+            This might be a blessing in disguise for new renters who want to live in an area that is usually out of budget for them.
+            </p>
+            </div>
+            </div>
+        </section>
+        
+        <section id="wfh">
+            <div class="featured-item">
+            <div class="featured-item-image">
+            <img src="./assets/images/wfh-article.jpg" alt="cartoon of people working from home">
+            </div>
+            <div class="featured-item-text">
+            <h2> Will Working From Home Be The New Normal After Lockdown Is Over?</h2>
+            <h5>(12th September 2020)</h5>
+            <p> Over the past couple of months the way we have been working has been changing, but could this be a permanent fixture?
+            <br><br>
+            I can vouch for a number of people when I say that working from home took some getting use to. The comfort of your own home seems like a good environment at first but it is riddled with distractions and took a number of weeks to get into a good routine. Now it seems however, that this short term change that we took could be perminent for some people.
+            <br><br>
+            Many companies across the UK are deciding to make the change to working from home permanent for some jobs as the benefits seem to outweight the negatives. From a business perspective, working from home means the reduction in costs for office space, electricity, food and drink, and expenses used up by employees. In some cases, the use of new video technology such as Zoom and Microsoft Teams has given companies a new look into what the future holds and possibly a revamp in how we work together in our day to day lives.
+            </p>
+            </div>
+            </div>
+        </section>
+        
+        <section id="instagram">
+            <div class="featured-item left-align">
+            <div class="featured-item-image">
+            <img src="./assets/images/instagram-article.jpg" alt="Instagram app on phone">
+            </div>
+            <div class="featured-item-text">
+            <h2> Instagram Is Now 10 Years Old, But Has It Had A Positive Or Negative Impact On Us? </h2>
+            <h5>(12th September 2020)</h5>
+            <p> 10 years seems like a milestone to celebrate but is this social media app really giving us enjoyment?
+            <br><br>
+            The concept is simple, post a picture or video, add a caption, and post it for all your friends and followers to see. It sounds pretty similar to most other social media apps but is sharing photos actually affecting our mental health? I suppose its who you follow and how you use the app. There is no harm is posting updates and commenting and sharing things between friends, and in some cases, it is a good way to interact with people in which accessibility is hard so having this outlet is beneficial.
+            <br><br>
+            However, there is a subtle dark side to the app. It seems more and more people are posting pictures that persuade us of a false reality hidden behind filters and camera angles. This seems to be endorsed by certain celebrities and is directly affecting the metal health of younger people who believe that their is a new standard that they cannot reach. Does this mean that we need to address this and educate people of the truth behind the lies, or do we directly report the users who post these images and videos? 
+            <br><br>
+            Either way, there are both ups and downs of the app, and hopefully in the next 10 years we will see there being more positives than negatives.
+            </p>
+            </div>
+            </div>
+        </section>
+        
+        <section id="petrol">
+            <div class="featured-item">
+            <div class="featured-item-image">
+            <img src="./assets/images/petrol-article.jpg" alt="Tom Brady throwing american football">
+            </div>
+            <div class="featured-item-text">
+            <h2> Labour Suggests Phase Out Of Petrol Cars By 2030 </h2>
+            <h5>(12th September 2020)</h5>
+            <p> Global warming is a big issue, especially in big cities. It seems like Labour are trying to help takle this by speeding up deadlines
+            <br><br>
+            We all know that there are many things that are affecting the environment. Deforestation, the meat industry and air pollution to name a few. It seems like Labour are looking to deal with the latter by suggesting that we scrap petrol cars by 2030. This comes as it seems as if the UK is falling behind compared to other countries who are already working towards better alternatives.
+            <br><br>
+            Currently, the number of electric cars and other vehicles on the road is small, but has seen a massive increase over the last 10 years due to a push in eco friendly cars by big car maufacturers. Also a lot of money has been put into providing electric cars with charging stations over all areas of the UK. This in tern with Labours announcement could mean that we take a big step forward in providing cleaner air and reducing the number of fossil fuels being burnt.
+            </p>
+            </div>
+            </div>
+        </section>
+    </div>
+  </main>
+
+  <footer>
+    <!-- The footer contains 2 sections - social and contact information and a navigation  -->
+   <div class="footer-inner">
+    <div id="footer-top">
+      <div class="footer-content" id="social">
+        <!-- Subscription sign-up -->
+        <div id="subscription">
+          <h4>SUBSCRIBE TO THE PLUG NEWSLETTER</h4>
+          <!-- Email address to be entered by user - input tag takes in user input -->
+          <input type="email" name="subscribe-email" placeholder="Enter Email..."/>
+          <!-- Subscribe button- button tag gives semantic meaning -->
+          <button type="submit">Subscribe</button>
+        </div>
+        <!-- Social media links -->
+        <div  id="social-media">
+          <h4>Follow Us:</h4>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/">
+                <img src="./assets/images/facebook-150.png" alt="Facebook" width="40" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/">
+                <img src="./assets/images/twitter-150.png" alt="Twitter" width="40" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <img src="./assets/images/instagram-150.png" alt="Instagram" width="40" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Contact information -->
+      <div class="footer-content" id="address">
+        
+        <h4>Get in touch:</h4>
+        <address>
+          <!-- mailto attribute allows browser to call mailing application   -->
+          <p>
+            <!-- hide text but keep for screen readers -->
+            <span class="hidden">Email:</span>
+            <i class='far fa-envelope fa-lg' ></i>
+            <a href="mailto:enquiries@planetaryxpark.com">info@theplug_magazine.com</a>
+          </p>
+          <!-- tel attribute allows browser to call phone application   -->
+          <p>
+            <!-- hide text but keep for screen readers -->
+            <span class="hidden">Call Us:</span>
+            <i class='fas fa-phone-alt fa-lg'></i>
+            <a href="tel:+012345432234">+44 23456789</a> (9am-5pm) Monday - Friday
+          </p>
+        </address>
+      </div>
+    </div>
+   </div>
+
+    <!-- Footer Navigation -->
+    <nav id="footer-nav">
+      <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+      <ul>
+        <li><a href="./placeholder.html">About</a></li>
+        <li><a href="./placeholder.html">Careers</a></li>
+        <li><a href="./placeholder.html">Lost &amp; Found</a></li>
+        <li><a href="./tickets.html">Tickets &amp; Promos</a></li>
+        <li><a href="./plan.html">Plan Visit</a></li>
+      </ul>
+    </nav>
+
+    <!-- Legal Section -->
+    <div id="legal">
+      <p>
+        <!-- Copyright symbol as a special character -->
+        Copyright &copy; |
+        <a href="./placeholder.html">Privacy</a> |
+        <a href="./placeholder.html">Terms and Conditions</a> |
+        <a href="./placeholder.html">Site Map</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

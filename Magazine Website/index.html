@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> The Plug Magazine || Always stay up to date </title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png" sizes="32x32" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Description to optimise SEO -->
+  <meta name="description" content="Explore what is happening in the world with The Plug magazine for all your daily news" />
+ <!-- Limiting to 10 top key words -->
+  <meta name="keywords" content="newspaper, magazine, news, music, fashion, sports, headlines, culture, student" />
+  <meta name="author" content="James Carpenter" />
+  <!-- Normalize CSS is a third party CSS file that we have used to ensure cross-browser compatability and responsiveness -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
+  <!-- External stylesheet containing most styling information of the page -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <script src="./assets/js/responsive_menu.js"></script>
+  <!-- External CSS for 3rd party font-awesome icons  -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <!-- Top and main Navigation bars goes into header tag -->
+  <header>
+    <!-- Top level navigation bar-->
+    <div id="top-nav">
+      <nav>
+        
+        <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+        <ul>
+          <li><a href="./placeholder.html">About</a></li>
+          <li><a href="./placeholder.html">Careers</a></li>
+          <li><a href="./placeholder.html">Mobile App</a></li>
+        </ul>
+      </nav>
+      <!-- search input goes into top navigation area, but is not a navigational link therefore is excluded from the <nav> tag . Form tag used for semantics-->
+      <form>
+        <input type="search" name="site-search" placeholder="Search for key words..." />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <!-- Main navigation bar - includes icon that links to home page and the 2 other submission pages -->
+    <nav id="main-nav">
+      <div id="logo">
+        <!-- Image tag nested within anchor tags for creating hyperlink to image  -->
+        <a href="./index.html">
+          <img src="./assets/images/logo_250.png" onmouseover="this.src='./assets/images/logo_hover_250.png'" onmouseout="this.src='./assets/images/logo_250.png'" alt="The Plug Magazine"/>
+        </a>
+      </div>
+      <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+      <ul>
+          <li><a id="news-link" href="./news.html">News</a></li>
+          <li><a id="music-link" href="./music.html">Music</a></li>
+          <li><a id="fashion-link" href="./fashion.html">Fashion</a></li>
+          <li><a id="sports-link" href="./sports.html">Sports</a></li>
+      </ul>
+      <!--  Drop down navigation (menu) for responsive tablet and mobile views, called with CSS media queries -->
+      <div id="dropdown">
+        <!-- Button icon for users to click to show contents -->
+        <button id="dropbtn">Menu
+          <i class="fas fa-bars">
+          </i>
+        </button>
+        <!-- Contents of the navigational menu bar in responsive mode  -->
+        <div id="dropdown-content">
+          <a id="news-link-dropdown" href="./news.html">News</a>
+          <a id="music-link-dropdown" href="./music.html">Music</a>
+          <a id="fashion-link-dropdown" href="./fashion.html">Fashion</a>
+          <a id="sports-link-dropdown" href="./sports.html">Sport</a>
+        </div>
+      </div >
+    </nav>
+  </header>
+
+  <!-- Main homepage content -->
+  <main>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/51d51n0d13/london/" data-label_1="LONDON" data-label_2="WEATHER" data-theme="original" >LONDON WEATHER</a>
+    <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+    <!-- div container to wrap main contents -->
+    <div class="wrapper">
+      <!-- Introductory information, encapsulated within a section tag -->
+      <section id="main-headline">
+        <!-- Each section has an associated h2 tag -->
+        <h2 class="index-header">MAIN HEADLINE</h2>
+        <section>
+            <div class="featured-item">
+            <div class="featured-item-image">
+            <img src="./assets/images/rent-article.jpg" alt="for lease sign">
+            </div>
+            <div class="featured-item-text">
+            <h2> Landlord Are Cutting Rent In Major Cities By Up To 20% Due To Pandemic</h2>
+            <h5>(17th September 2020)</h5>
+            <p> There seems to be a lot of negatives to 2020 so far but things could be looking up for people wanting to rent in major cities in the UK
+            <br><br>
+            The reason behind this major change in the housing ecomony is due to the fact that tenants want to escape from the busy city atmosphere in hopes this reduces their risk of catching COVID. They have been noted to be relocate to bigger properties in more rural parts of the country and as a result has seen the market in metropolitan areas reduce drastically. Another...
+            </p>
+            <a class="button" href="./news.html#rent">Read Full Article</a>
+            </div>
+            </div>
+        </section>
+        
+       </section>
+
+      <!-- This section presents four areas of the theme park (lands)  -->
+      <section id="featured-lands">
+        <h2>navigation:</h2>
+        <div class="container">
+          <div class="featured-land">
+            <!-- Each of the featured land's objects are nested within anchor tags so that the users can click on any part of the image / button to go to the hyperlinked page -->
+            <a href="./news.html">
+              <!-- Picture media tags serve different images based on device width. Image used changes with smaller widths (tablet size and below) -->
+              <picture>
+                <!-- Image used for responsive modes have longer width to accommodate change in display style -->
+                <source media="(max-width: 1024px)" srcset="./assets/images/news-small.jpg" />
+                <!-- Alt text on image provides accessibility  -->
+                <img src="./assets/images/newspaper.jpg" alt="newspapers stacked ontop of each other">
+              </picture>
+              <!-- Text displayed on each featured land. styled with CSS -->
+              <span id="news-button" class="button">NEWS</span>
+            </a>
+          </div>
+          <div class="featured-land">
+            <a href="./music.html">
+              <picture>
+                <source media="(max-width: 1024px)" srcset="./assets/images/music-small.jpg" />
+                <img src="./assets/images/music.jpg" alt="woman staring at neon signs of instruments">
+              </picture>
+              <span id="music-button" class="button">MUSIC</span>
+            </a>
+          </div>
+          <div class="featured-land">
+            <a href="./fashion.html">
+              <picture>
+                <source media="(max-width: 1024px)" srcset="./assets/images/fashion-small.jpg" />
+                <img src="./assets/images/fashion.jpg" alt="t-shirts on clothing rack">
+              </picture>
+              <span id="fashion-button" class="button">FASHION</span>
+            </a>
+          </div>
+          <div class="featured-land">
+            <a href="./sports.html">
+              <picture>
+                <source media="(max-width: 1024px)" srcset="./assets/images/sports-small.jpg" />
+                <img src="./assets/images/sports.jpg" alt="green grass with white line">
+              </picture>
+              <span id="sports-button" class="button">SPORT</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- This section presents featured facilities of the park -->
+      <section id="explore">
+        <h2 class="index-header">OTHER STORIES</h2>
+        <!-- Div tags used to containerize contents  -->
+        <!-- Restaurants -->
+        <div class="featured-item">
+          <!-- image of featured items within a div for display next to text of featured item -->
+          <div class="featured-item-image">
+            <!-- Alt tag used to describe images for accessibility -->
+            <img src="./assets/images/venue-closure-article.jpg" alt="Sam Fender outside the Virgin Money Arena"/>
+          </div>
+          <!-- text of featured items within a div for display next to image of featured item -->
+          <div class="featured-item-text">
+            <h2 id="music-index">MUSIC</h2>
+            <h3>New Lockdown Rules Mean The Closure of Newcastle's Virgin Money Arena Social Distance Shows</h3>
+            <p> Just as we started to see normality rear its head in the easing of luckdown, tragedy has struck again for music fans... </p>
+            <!-- hyperlinks styled with CSS to appear with button styling without semantic effect -->
+            <a class="button" href="./music.html#venue-closure">Read Full Article</a>
+          </div>
+        </div>
+        <!-- Upcoming Events -->
+        <div class="featured-item left-align">
+          <!-- image of featured items within a div for display next to text of featured item -->
+          <div class="featured-item-image">
+            <img src="./assets/images/beyonce-superstar.jpg" alt="Beyonce X Adidas Superstar Shoes"/>
+          </div>
+          <!-- text of featured items within a div for display next to image of featured item -->
+          <div class="featured-item-text">
+            <h2 id="fashion-index">FASHION</h2>
+            <h3>Beyonce X Adidas Superstar Platform: Hit or Miss?</h3>
+            <p>We all know Beyonce has domitated the music industry for a number of years but are her new collaberation with Adidas a work of art or a deformation of a classic shoe?...</p>
+            <a class="button" href="./fashion.html#beyonce">Read Full Article</a>
+          </div>
+        </div>
+        <!-- Shop  -->
+        <div class="featured-item">
+          <!-- image of featured items within a div for display next to text of featured item -->
+          <div class="featured-item-image">
+            <img src="./assets/images/leeds-article.jpg" alt="Leeds United players celebrating"/>
+          </div>
+          <!-- text of featured items within a div for display next to image of featured item -->
+          <div class="featured-item-text">
+            <h2 id="sports-index">SPORTS</h2>
+            <h3>Leeds First Game In the Premier League Seems To Predict A Good Season Position After Close 4-3 Loss to Champions Liverpool</h3>
+            <p>Although their first game of the season ended in a loss for newly promoted Leeds United, the performance and close score line to last years champions Liverpool has given fans high hopes for the team... </p>
+            <a class="button" href="./sports.html#leeds">Read Full Article</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <!-- The footer contains 2 sections - social and contact information and a navigation  -->
+   <div class="footer-inner">
+    <div id="footer-top">
+      <div class="footer-content" id="social">
+        <!-- Subscription sign-up -->
+        <div id="subscription">
+          <h4>SUBSCRIBE TO THE PLUG NEWSLETTER</h4>
+          <!-- Email address to be entered by user - input tag takes in user input -->
+          <input type="email" name="subscribe-email" placeholder="Enter Email..."/>
+          <!-- Subscribe button- button tag gives semantic meaning -->
+          <button type="submit">Subscribe</button>
+        </div>
+        <!-- Social media links -->
+        <div  id="social-media">
+          <h4>Follow Us:</h4>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/">
+                <img src="./assets/images/facebook-150.png" alt="Facebook" width="40" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/">
+                <img src="./assets/images/twitter-150.png" alt="Twitter" width="40" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <img src="./assets/images/instagram-150.png" alt="Instagram" width="40" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Contact information -->
+      <div class="footer-content" id="address">
+        
+        <h4>Get in touch:</h4>
+        <address>
+          <!-- mailto attribute allows browser to call mailing application   -->
+          <p>
+            <!-- hide text but keep for screen readers -->
+            <span class="hidden">Email:</span>
+            <i class='far fa-envelope fa-lg' ></i>
+            <a href="mailto:enquiries@planetaryxpark.com">info@theplug_magazine.com</a>
+          </p>
+          <!-- tel attribute allows browser to call phone application   -->
+          <p>
+            <!-- hide text but keep for screen readers -->
+            <span class="hidden">Call Us:</span>
+            <i class='fas fa-phone-alt fa-lg'></i>
+            <a href="tel:+012345432234">+44 23456789</a> (9am-5pm) Monday - Friday
+          </p>
+        </address>
+      </div>
+    </div>
+   </div>
+
+    <!-- Footer Navigation -->
+    <nav id="footer-nav">
+      <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+      <ul>
+        <li><a href="./placeholder.html">About Us</a></li>
+        <li><a href="./placeholder.html">Careers</a></li>
+        <li><a href="./placeholder.html">Mobile App</a></li>
+
+      </ul>
+    </nav>
+
+    <!-- Legal Section -->
+    <div id="legal">
+      <p>
+        <!-- Copyright symbol as a special character -->
+        Copyright The Plug Magazine &copy; |
+        <a href="./placeholder.html">Privacy</a> |
+        <a href="./placeholder.html">Terms and Conditions</a> |
+        <a href="./placeholder.html">Site Map</a>
+      </p>
+        
+    </div>
+  </footer>
+</body>
+</html>

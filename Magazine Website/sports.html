@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Sports || The Plug Magazine </title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png" sizes="32x32" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Description to optimise SEO -->
+  <meta name="description" content="Explore what is happening in the world with The Plug magazine for all your daily news" />
+ <!-- Limiting to 10 top key words -->
+  <meta name="keywords" content="newspaper, magazine, news, music, fashion, sports, headlines, culture, student" />
+  <meta name="author" content="James Carpenter" />
+  <!-- Normalize CSS is a third party CSS file that we have used to ensure cross-browser compatability and responsiveness -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
+  <!-- External stylesheet containing most styling information of the page -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  <script src="./assets/js/responsive_menu.js"></script>
+  <!-- External CSS for 3rd party font-awesome icons  -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <!-- Top and main Navigation bars goes into header tag -->
+  <header>
+    <!-- Top level navigation bar-->
+    <div id="top-nav">
+      <nav>
+        <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+        <ul>
+          <li><a href="./placeholder.html">About</a></li>
+          <li><a href="./placeholder.html">Careers</a></li>
+          <li><a href="./placeholder.html">Mobile App</a></li>
+        </ul>
+      </nav>
+      <!-- search input goes into top navigation area, but is not a navigational link therefore is excluded from the <nav> tag . Form tag used for semantics-->
+      <form>
+        <input type="search" name="site-search" placeholder="Search for key words..." />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <!-- Main navigation bar - includes icon that links to home page and the 2 other submission pages -->
+    <nav id="main-nav">
+      <div id="logo">
+        <!-- Image tag nested within anchor tags for creating hyperlink to image  -->
+        <a href="./index.html">
+          <img src="./assets/images/logo_250.png" onmouseover="this.src='./assets/images/logo_hover_250.png'" onmouseout="this.src='./assets/images/logo_250.png'" alt="The Plug Magazine"/>
+        </a>
+      </div>
+      <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+      <ul>
+          <li><a id="news-link" href="./news.html">News</a></li>
+          <li><a id="music-link" href="./music.html">Music</a></li>
+          <li><a id="fashion-link" href="./fashion.html">Fashion</a></li>
+          <li><a id="sports-link" href="./sports.html">Sports</a></li>
+      </ul>
+      <!--  Drop down navigation (menu) for responsive tablet and mobile views, called with CSS media queries -->
+      <div id="dropdown">
+        <!-- Button icon for users to click to show contents -->
+        <button id="dropbtn">Menu
+          <i class="fas fa-bars">
+          </i>
+        </button>
+        <!-- Contents of the navigational menu bar in responsive mode  -->
+        <div id="dropdown-content">
+          <a id="news-link-dropdown" href="./news.html">News</a>
+          <a id="music-link-dropdown" href="./music.html">Music</a>
+          <a id="fashion-link-dropdown" href="./fashion.html">Fashion</a>
+          <a id="sports-link-dropdown" href="./sports.html">Sport</a>
+        </div>
+      </div >
+    </nav>
+  </header>
+    
+  <!-- Main plan visit page content -->
+  <main>
+    <!-- Page title section -->
+    <div class="page-title">
+      <!-- Page title - h1 tag for web crawlers to identify starting point of page -->
+      <h1 id="sports-heading">SPORTS</h1>
+    </div>
+    
+
+    <!-- Banner Image section -->
+    <div id="sports-banner">
+      
+    </div>
+
+    <!-- div container to wrap main contents -->
+    <div class="wrapper">
+        <section id="tables">
+        <h2>STANDINGS OF THE BEST:</h2>
+        <!-- div tag used to containerize all pass types -->
+        <div class="container">
+          <!-- div tag used to containerize details within a single pass type -->
+          <div id="football" class="sports-table">
+            <!-- One day pass -->
+            
+
+            <img src="./assets/images/premier-league.png" width=300px height= 140px alt="Premier League logo" />
+            <h5> (Season 2020/21)</h5>
+        
+            <table>
+                <tr>
+                    <th>Club</th>
+                    <th>MP</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>Pts</th>
+                </tr>
+                <tr>
+                    <td>1 Everton</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>2 Arsenal</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>3 Crystal Palace</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>4 Leister City</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>5 Tottenham</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>6 Chelsea</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr> 
+                <tr>
+                    <td>7 Wolves</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr> 
+                <tr>
+                    <td>8 Brighton</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr> 
+                <tr>
+                    <td>9 Liverpool</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr> 
+                <tr>
+                    <td>10 Leeds</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr> 
+            </table>
+          </div>
+          <!-- div tag used to containerize details within a single pass type -->
+          <div id="basketball" class="sports-table">
+            <img src="./assets/images/nba-logo.jpg" width=300px height= 140px alt="NBA logo" />
+            <!-- Standard season pass -->
+            <h5> (Season 2019/20)</h5>
+            <table>
+                <h4> Eastern Conference</h4>
+                <tr>
+                    <th>Team</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>Pct</th>
+                    <th>Conf</th>
+                    <th>L10</th>
+                </tr>
+                <tr>
+                    <td>1 Bucks</td>
+                    <td>56</td>
+                    <td>17</td>
+                    <td>.767</td>
+                    <td>37 - 7</td>
+                    <td>3 - 7</td>
+                </tr>
+                <tr>
+                    <td>2 Raptors</td>
+                    <td>53</td>
+                    <td>19</td>
+                    <td>.736</td>
+                    <td>34 - 11</td>
+                    <td>9 - 1</td>
+                </tr>
+                <tr>
+                    <td>3 Celtics</td>
+                    <td>48</td>
+                    <td>24</td>
+                    <td>.667</td>
+                    <td>30 - 13</td>
+                    <td>6 - 4</td>
+                </tr>
+                <tr>
+                    <td>4 Pacers</td>
+                    <td>45</td>
+                    <td>28</td>
+                    <td>.616</td>
+                    <td>28 - 19</td>
+                    <td>7 - 3</td>
+                </tr>
+                <tr>
+                    <td>5 Heat</td>
+                    <td>44</td>
+                    <td>29</td>
+                    <td>.603</td>
+                    <td>30 - 13</td>
+                    <td>4 - 6</td>
+                </tr> 
+            </table>
+            <table>
+                <h4> Western Conference</h4>
+                <tr>
+                    <th>Team</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>Pct</th>
+                    <th>Conf</th>
+                    <th>L10</th>
+                </tr>
+                <tr>
+                    <td>1 Lakers</td>
+                    <td>52</td>
+                    <td>19</td>
+                    <td>.732</td>
+                    <td>36 - 10</td>
+                    <td>4 - 6</td>
+                </tr>
+                <tr>
+                    <td>2 Clippers</td>
+                    <td>49</td>
+                    <td>23</td>
+                    <td>.681</td>
+                    <td>32 - 16</td>
+                    <td>6 - 4</td>
+                </tr>
+                <tr>
+                    <td>3 Nuggets</td>
+                    <td>46</td>
+                    <td>27</td>
+                    <td>.630</td>
+                    <td>29 - 16</td>
+                    <td>4 - 6</td>
+                </tr>
+                <tr>
+                    <td>4 Rockets</td>
+                    <td>44</td>
+                    <td>28</td>
+                    <td>.611</td>
+                    <td>28 - 19</td>
+                    <td>5 - 5</td>
+                </tr>
+                <tr>
+                    <td>5 Thunder</td>
+                    <td>44</td>
+                    <td>28</td>
+                    <td>.611</td>
+                    <td>27 - 19</td>
+                    <td>6 - 4</td>
+                </tr>
+            </table>
+            
+            
+          </div>
+          <!-- div tag used to containerize details within a single pass type -->
+          <div id="americanfootball" class="sports-table">
+            <img src="./assets/images/nfl-logo.jpg" width=300px height= 140px alt="NFL logo" />
+            <h5> (Season 2020/21)</h5>
+            <table>
+                <h4> American Football Conference (AFC) </h4>
+                <tr>
+                    <th>Team</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>D</th>
+                    <th>PF</th>
+                    <th>PA</th>
+                </tr>
+                <tr>
+                    <td>East - Bills</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>27</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>North - Ravens</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>38</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>South - Jaguars</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>27</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>West - Chiefs</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>34</td>
+                    <td>20</td>
+                </tr>
+         
+            </table>
+            <table>
+                <h4> National Football Conference (NFC) </h4>
+                <tr>
+                    <th>Team</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>D</th>
+                    <th>PF</th>
+                    <th>PA</th>
+                </tr>
+                <tr>
+                    <td>East - Washington</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>27</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>North - Packers</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>43</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>South - Saints</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>34</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>West - Cardinals</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>24</td>
+                    <td>20</td>
+                </tr>
+         
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- Information on operating hours of the park, encapsulated within a section tag -->
+      
+        <section id="clippers">
+            <div class="featured-item left-align">
+            <div class="featured-item-image">
+            <img src="./assets/images/clippers-article.jpg" alt="Patrick Beverly angry on floor">
+            </div>
+            <div class="featured-item-text">
+            <h2> Clippers Get Knocked Out By Nuggets After Turnaround From 3-1 Game Handicap</h2>
+            <h5>(17th September 2020)</h5>
+            <p> The Los Angeles Clippers seemed to be guarenteed a semi-final place in what looked like a clean sweep to Denver Nuggets, unfortuantely things didn't run so smoothly...
+            <br><br>
+            The Clippers haven't always been the best of teams but it seems like things could have changed this season with the new additions of last years NBA Finals MVP Kawhi Leonard and All Star player Paul George. Coming into the quarter finals it looked like the Clippers had secured the victory being 3-1 up against the Denver Nuggets. Unfortuantely things took a turn when the Nuggets won two straight games, leading it to a 3-3 tie and bringing it down to the Game 7 decider.
+            <br><br>
+            The pressure of getting one last win seemed to cause trouble for the Clippers and having the Nuggets on a two game win streak proved to be the end factor. Out of all of the 7 games the final match had the biggest point difference with the score being 104-89. There is a lot of room for improvement on the team and the coaches will be trying to figure out what went wrong for what should of been a sure fire victory.
+            </p>
+            </div>
+            </div>
+        </section>
+        
+        <section id="leeds">
+            <div class="featured-item">
+            <div class="featured-item-image">
+            <img src="./assets/images/leeds-article.jpg" alt="Leeds United players celebrating">
+            </div>
+            <div class="featured-item-text">
+            <h2> Leeds First Game In the Premier League Seems To Predict A Good Season Position After Close 4-3 Loss to Champions Liverpool</h2>
+            <h5>(12th September 2020)</h5>
+            <p>Although their first game of the season ended in a loss for newly promoted Leeds United, the performance and close score line to last years champions Liverpool has given fans high hopes for the team.
+            <br><br>
+            It always seems to be the case that the newly promoted teams either fail miserably or are outstanding in their first year in the division. Sheffield United are a good example of when this goes well and Norwich are an example of when it doesn't. Leeds however seemed to go into their first game of the season against the raining champions Liverpool with a point to prove. 
+            <br><br>
+            The game started with a goal in the 4th minute from Mohamed Salah, and at that point we thought it would be a straight forward win for Liverpool, but then JAck Harrison make a comeback 8 minutes later. This then went back and forth with the teams trying to once up the other with an equal scoreline. Unfortunatley Salah scored a final goal in the 88th minute but we were on edge until the very end.
+            <br><br>
+            I defintely believe that Leeds might be the dark horse of this season, but only time will tell.
+            </p>
+            </div>
+            </div>
+        </section>
+        
+        <section id="tampa-bay">
+            <div class="featured-item left-align">
+            <div class="featured-item-image">
+            <img src="./assets/images/tampa-bay-article.jpg" alt="Tom Brady throwing american football">
+            </div>
+            <div class="featured-item-text">
+            <h2> Will Tom Brady Be Able To Get Tampa Bay A Championship After 18 Years Of Misfortune? </h2>
+            <h5>(12th September 2020)</h5>
+            <p>Having joined the Buccaneers this season after spending 19 years being a dominant player and winning six championships with the New England Patriots, will success be the same after a fresh start?
+            <br><br>
+            You don't have to know a lot about american football to know who Tom Brady is. He is the NFL equivalent to some of the greats in other sports such as Ronaldo, Michael Jordan, Serena Williams or Tiger Woods. The reason he is so well known is because he has won the Super Bowl 6 times while on the team the New England Patriots. Winning 6 makes him one of a few players to have won the most Championship rings in the entirety of the game, and it seems he is looking to win more by moving to a new team, the Tampa Bay Buccaneers.
+            <br><br>
+            This is a bold move for the player as the Buccaneers aren't know to be the best team in the division. In fact they have only ever won one championship back in 2002 and haven't even made the playoof's since 2007. I can see the appeal for Brady as I am sure he wants to prove that he can carry a team to a championship win, therefore increasing his legendary status, but maybe this is a move that will see more misappointments than rewards
+
+            </p>
+            </div>
+            </div>
+        </section>
+        
+        
+
+
+      
+    </div>
+  </main>
+
+  <footer>
+    <!-- The footer contains 2 sections - social and contact information and a navigation  -->
+   <div class="footer-inner">
+    <div id="footer-top">
+      <div class="footer-content" id="social">
+        <!-- Subscription sign-up -->
+        <div id="subscription">
+          <h4>SUBSCRIBE TO THE PLUG NEWSLETTER</h4>
+          <!-- Email address to be entered by user - input tag takes in user input -->
+          <input type="email" name="subscribe-email" placeholder="Enter Email..."/>
+          <!-- Subscribe button- button tag gives semantic meaning -->
+          <button type="submit">Subscribe</button>
+        </div>
+        <!-- Social media links -->
+        <div  id="social-media">
+          <h4>Follow Us:</h4>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/">
+                <img src="./assets/images/facebook-150.png" alt="Facebook" width="40" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/">
+                <img src="./assets/images/twitter-150.png" alt="Twitter" width="40" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <img src="./assets/images/instagram-150.png" alt="Instagram" width="40" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Contact information -->
+      <div class="footer-content" id="address">
+        
+        <h4>Get in touch:</h4>
+        <address>
+          <!-- mailto attribute allows browser to call mailing application   -->
+          <p>
+            <!-- hide text but keep for screen readers -->
+            <span class="hidden">Email:</span>
+            <i class='far fa-envelope fa-lg' ></i>
+            <a href="mailto:enquiries@planetaryxpark.com">info@theplug_magazine.com</a>
+          </p>
+          <!-- tel attribute allows browser to call phone application   -->
+          <p>
+            <!-- hide text but keep for screen readers -->
+            <span class="hidden">Call Us:</span>
+            <i class='fas fa-phone-alt fa-lg'></i>
+            <a href="tel:+012345432234">+44 23456789</a> (9am-5pm) Monday - Friday
+          </p>
+        </address>
+      </div>
+    </div>
+   </div>
+
+    <!-- Footer Navigation -->
+    <nav id="footer-nav">
+      <!-- Navigational link items listed as an unordered list. Listing format determined by CSS -->
+      <ul>
+        <li><a href="./placeholder.html">About</a></li>
+        <li><a href="./placeholder.html">Careers</a></li>
+        <li><a href="./placeholder.html">Lost &amp; Found</a></li>
+        <li><a href="./tickets.html">Tickets &amp; Promos</a></li>
+        <li><a href="./plan.html">Plan Visit</a></li>
+      </ul>
+    </nav>
+
+    <!-- Legal Section -->
+    <div id="legal">
+      <p>
+        <!-- Copyright symbol as a special character -->
+        Copyright &copy; |
+        <a href="./placeholder.html">Privacy</a> |
+        <a href="./placeholder.html">Terms and Conditions</a> |
+        <a href="./placeholder.html">Site Map</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
