@@ -8,3 +8,10 @@ This was a task that was given to me in my Introduction to Programming 2 module 
 
 I chose to implement the following features: 
 
+- colour palette
+- eraser tool
+- freehand tool
+- line tool
+- mirror tool
+- spray can tool
+- stamp tool
