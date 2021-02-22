@@ -1,0 +1,982 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Chosen for you</title>
+  <meta name="description" content="Chosen for you">
+  <meta name="author" content="James Carpenter">
+
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+
+
+<header>
+    <h1>Chosen for you</h1>
+    <h2>We think you will love these</h2>
+</header>
+
+</head>
+
+<body>
+<div id="nav">
+    
+ <!-- Search bar -->
+    
+<input id="searchbar" onkeyup="search_product()" type="text"
+        name="search" placeholder="Search">
+    
+<!-- Price range -->
+    
+<div class="range-slider">
+	<span id="numberslider">Price: <input type="number" value="0" min="0" max="100" step="1"> to <input  type="number" value="100" min="0" max="100" step="1"></span>
+	<input id="min" value="0" min="0" max="100" step="1" type="range">
+	<input id="max" value="100" min="0" max="100" step="1" type="range">
+
+		<line x1="4" y1="0" x2="480" y2="0" stroke="#444" stroke-width="12"></line>
+
+</div>
+
+<br>
+<br>
+<!--Filter -->
+    
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> All</button>
+  <button class="btn" onclick="filterSelection('coats-jackets')"> Coats Jackets</button>
+    <button class="btn" onclick="filterSelection('tops')"> Tops</button>
+  <button class="btn" onclick="filterSelection('leggings')"> Leggings</button>
+  <button class="btn" onclick="filterSelection('jeans')"> Jeans</button>
+    <button class="btn" onclick="filterSelection('footwear')"> Footwear</button>
+    <button class="btn" onclick="filterSelection('nightwear')"> Nightwear</button>
+</div>
+
+</div>
+
+ <!-- Carousel -->
+
+    <section>
+<div class="scroll-arrow" id="scroll-left">
+    &#8592;
+  </div>
+  <ul id="imgList">
+      
+       <!-- Product 1 -->
+      
+      <div class="filter coats-jackets">
+      <li class="product">
+          <img id ="prod1" src="https://media2.newlookassets.com/i/newlook/619712403.jpg" />
+          <br>
+          <p class ="title"> Dark Grey Faux Fur Longline Coat</p>
+          <br>
+          <p class="price">45.99</p>
+      </li>
+    </div>
+      
+      <div id="myModal1" class="modal">
+          <div class="modal-content" id="desc1">
+               <span class="close">&times;</span>
+              <p><b>Dark Grey Faux Fur Longline Coat</b>
+
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Go for a luxe finish with this grey faux fur coat.
+                    <br>
+                    <br>
+                    - Collared neckline
+                    <br>
+                    - Long sleeves
+                    <br>
+                    - Side pockets
+                    <br>
+                    - Popper front fastening
+                    <br>
+                    - Faux fur finish
+                    <br>
+                    - Regular fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/coats-jackets/dark-grey-faux-fur-longline-coat/p/619712403" target="_blank">Buy Now</a>
+            </div>
+        </div>
+
+      <!-- Product 2 -->
+      
+      <div class="filter tops">
+      <li class="product">
+          <img id ="prod2" src="https://media2.newlookassets.com/i/newlook/635105501.jpg"/>
+          <br>
+          <p class ="title"> Black Ribbed Long Sleeve Roll Neck Top </p>
+          <br>
+          <p class="price">08.99</p> 
+      </li>
+      </div>  
+      
+       <div id="myModal2" class="modal">
+          <div class="modal-content" id="desc2">
+               <span class="close">&times;</span>
+               <p><b>Black Ribbed Long Sleeve Roll Neck Top</b>
+
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Update your outfit options with this black roll neck top.
+                    <br>
+                    <br>
+                    - Roll neckline
+                    <br>
+                    - Long sleeves
+                    <br>
+                    - Ribbed jersey fabric
+                    <br>
+                    - Slim fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/tops/black-ribbed-long-sleeve-roll-neck-top/p/635105501" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+      <!-- Product 3 -->
+      
+      <div class="filter leggings">
+      <li class="product">
+          <img id ="prod3" src="https://media3.newlookassets.com/i/newlook/634018201.jpg"/>
+          <br>
+          <p class ="title">Black Coated Leather-Look Leggings </p>
+          <br>
+          <p class="price">19.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal3" class="modal">
+          <div class="modal-content" id="desc3">
+               <span class="close">&times;</span>
+              <p><b>Black Coated Leather-Look Leggings</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Toughen it up in these black leather-look leggings.
+                    <br>
+                    <br>
+                    - High waist
+                    <br>
+                    - Zip side fastening
+                    <br>
+                    - Leather-look finish
+                    <br>
+                    - Skinny fit
+                    
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/leggings/black-coated-leather-look-leggings/p/634018201" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+    <!-- Product 4 -->
+    
+    <div class="filter coats-jackets">  
+    <li class="product">
+        <img  id ="prod4" src="https://media3.newlookassets.com/i/newlook/619712401.jpg"/>
+        <br>
+        <p class ="title">Black Faux Fur Longline Coat</p>
+        <br>
+        <p class="price">45.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal4" class="modal">
+          <div class="modal-content" id="desc4">
+               <span class="close">&times;</span>
+              <p><b>Black Faux Fur Longline Coat</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Go for a luxe finish with this black faux fur coat.
+                    <br>
+                    <br>
+                    - Collared neckline
+                    <br>
+                    - Long sleeves
+                    <br>
+                    - Side pockets
+                    <br>
+                    - Popper front fastening
+                    <br>
+                    - Faux fur finish
+                    <br>
+                    - Regular fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/coats-jackets/black-faux-fur-longline-coat/p/619712401" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+      <!-- Product 5 -->
+      
+    <div class="filter jeans">
+    <li class="product">
+        <img id ="prod5" class="filter jeans" src="https://media2.newlookassets.com/i/newlook/635654901.jpg"/>
+        <br>
+        <p class ="title">Black High Waist Super Skinny Hallie <br>Jeans </p>
+        <p class="price">25.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal5" class="modal">
+          <div class="modal-content" id="desc5">
+               <span class="close">&times;</span>
+              <p><b>Black High Waist Super Skinny Hallie Jeans</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Meet the black skinny jean that makes you feel all<br> Insta-ready...
+                    <br>
+                    <br>
+                    - Sits on the waist
+                    <br>
+                    - Belt loops
+                    <br>
+                    - 5-pocket design
+                    <br>
+                    - Button and zip-fly fastening
+                    <br>
+                    - Dark wash
+                    <br>
+                    - High-stretch denim
+                    <br>
+                    - Super-skinny fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/jeans/black-high-waist-super-skinny-hallie-jeans/p/635654901" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+      <!-- Product 6 -->
+      
+    <div class="filter coats-jackets">
+    <li class="product">
+        <img id ="prod6" class="filter coats-jackets" src="https://media2.newlookassets.com/i/newlook/619653214.jpg"/>
+        <br>
+        <p class ="title">Camel Revere Collar Coat </p>
+        <br>
+        <p class="price">35.99</p>
+      </li>
+    </div>
+      
+    <div id="myModal6" class="modal">
+          <div class="modal-content" id="desc6">
+               <span class="close">&times;</span>
+              <p><b>Camel Revere Collar Coat</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Layer up your look with this camel collar coat.
+                    <br>
+                    <br>
+                    - Revere collar
+                    <br>
+                    - Long sleeves
+                    <br>
+                    - Double pocket front
+                    <br>
+                    - Fully lined
+                    <br>
+                    - Longline design
+                    <br>
+                    - Button-up fastening
+                    <br>
+                    - Felt-look finish
+                    <br>
+                    - Regular fit
+                    
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/coats-jackets/formal-coats/camel-revere-collar-coat/p/619653214" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+      <!-- Product 7 -->
+      
+    <div class="filter jeans">
+    <li class="product">
+        <img id ="prod7" src="https://media3.newlookassets.com/i/newlook/623140201.jpg"/>
+        <br>
+        <p class ="title">Black Lift & Shape Jeggings </p>
+        <br>
+        <p class="price">17.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal7" class="modal">
+          <div class="modal-content" id="desc7">
+               <span class="close">&times;</span>
+              <p><b>Black Lift & Shape Jeggings</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Introducing the black jeggings that makes you feel <br>all comfy...
+                    <br>
+                    <br>
+                    - Belt loops
+                    <br>
+                    - 5-pocket design
+                    <br>
+                    - Sculpting seams
+                    <br>
+                    - High-stretch denim
+                    <br>
+                    - Super-skinny fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/jeans/black-%27lift-%26-shape%27-jeggings/p/623140201" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+      <!-- Product 8 -->
+      
+      <div class="filter coats-jackets">
+    <li class="product">
+        <img id ="prod8" src="https://media2.newlookassets.com/i/newlook/632207701.jpg"/>
+        <br>
+        <p class ="title">Black Leather-Look Aviator Jacket</p>
+        <br>
+        <p class="price">55.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal8" class="modal">
+          <div class="modal-content" id="desc8">
+               <span class="close">&times;</span>
+              <p><b>Black Leather-Look Aviator Jacket</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Add some edge to your everyday style with this black<br> aviator jacket. 
+                    <br>
+                    <br>
+                    - Collared neckline
+                    <br>
+                    - Long sleeves
+                    <br>
+                    - Soft faux fur lining
+                    <br>
+                    - Buckle hem trim
+                    <br>
+                    - Zip side pockets
+                    <br>
+                    - Zip-up fastening
+                    <br>
+                    - Leather-look finish
+                    <br>
+                    - Regular fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/coats-jackets/black-leather-look-aviator-jacket/p/632207701" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+      <!-- Product 9 -->
+      
+      <div class="filter coats-jackets">
+    <li class="product">
+        <img id ="prod9" src="https://media3.newlookassets.com/i/newlook/631197208.jpg"/>
+        <br>
+        <p class ="title">Light Grey Fluffy Houndstooth Double 
+        <br>Breasted Coat </p>
+        <p class="price">49.99</p></li>
+      </div>
+      
+      <div id="myModal9" class="modal">
+          <div class="modal-content" id="desc9">
+               <span class="close">&times;</span>
+              <p><b>Light Grey Fluffy Houndstooth Double 
+        <br>Breasted Coat</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Opt for a fluffy finish with this grey houndstooth coat.
+                    <br>
+                    <br>
+                    - Dogtooth pattern
+                    <br>
+                    - Revere collar
+                    <br>
+                    - Long sleeves
+                    <br>
+                    - Side pockets
+                    <br>
+                    - Longline design
+                    <br>
+                    - Double breasted button fastening
+                    <br>
+                    - Super-soft fluffy finish
+                    <br>
+                    - Relaxed fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/coats-jackets/formal-coats/light-grey-fluffy-houndstooth-double-breasted-coat-/p/631197208" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+      <!-- Product 10 -->
+      
+      <div class="filter leggings">
+    <li class="product">
+        <img id ="prod10" src="https://media3.newlookassets.com/i/newlook/616323901.jpg"/>
+        <br>
+        <p class ="title">Black High Waist Leggings</p>
+        <br>
+        <p class="price">08.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal10" class="modal">
+          <div class="modal-content" id="desc10">
+               <span class="close">&times;</span>
+              <p><b>Black High Waist Leggings</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Stock up on style steals with these high waist leggings.
+                    <br>
+                    <br>
+                    - Elasticated high waist
+                    <br>
+                   - Jersey fabric
+                    <br>
+                    - Slim fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/leggings/black-high-waist-leggings/p/616323901" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+      <!-- Product 11 -->
+      
+      <div class="filter jeans">
+    <li class="product">
+        <img id ="prod11" src="https://media2.newlookassets.com/i/newlook/631910801.jpg"/>
+        <br>
+        <p class ="title">Black Coated Super Skinny Hallie Jeans</p>
+        <br>
+        <p class="price">27.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal11" class="modal">
+          <div class="modal-content" id="desc11">
+               <span class="close">&times;</span>
+              <p><b>Black Coated Super Skinny Hallie Jeans</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Step up your denim game with these leather-look jeans.
+                    <br>
+                    <br>
+                    - High waist
+                    <br>
+                    - Belt loops
+                    <br>
+                    - 5-pocket design
+                    <br>
+                    - Button and zip fly fastening
+                    <br>
+                    - Coated leather-look finish
+                    <br>
+                    - Stretch denim
+                    <br>
+                    - Super-skinny fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/jeans/black-coated-super-skinny-hallie-jeans/p/631910801" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+      <!-- Product 12 -->
+      
+      <div class="filter footwear">
+    <li class="product">
+        <img id ="prod12" src="https://media3.newlookassets.com/i/newlook/629029201.jpg"/>
+        <br>
+        <p class ="title">Black Leather-Look Chunky Lace Up
+        <br>Boots</p>
+        <p class="price">27.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal12" class="modal">
+          <div class="modal-content" id="desc12">
+               <span class="close">&times;</span>
+              <p><b>Black Leather-Look Chunky Lace Up Boots</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Toughen up your style with these black lace-up boots.
+                    <br>
+                    <br>
+                    - Leather-look finish
+                    <br>
+                    - Rounded toe
+                    <br>
+                    - Lace-up front
+                    <br>
+                    - Zip side fastening
+                    <br>
+                    - Cleated sole
+                    <br>
+                    - Low block heel
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/footwear/boots/black-leather-look-chunky-lace-up-boots/p/629029201" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+      <!-- Product 13 -->
+      
+      <div class="filter jeans">
+    <li class="product">
+        <img id ="prod13" src="https://media3.newlookassets.com/i/newlook/631911801.jpg"/>
+        <br>
+        <p class ="title">Black Lift & Shape High Waist Skinny
+        <br>Jeans </p>
+        <p class="price">25.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal13" class="modal">
+          <div class="modal-content" id="desc13">
+               <span class="close">&times;</span>
+              <p><b>Black Lift & Shape High Waist Skinny Jeans</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  These black skinny jeans will look (absolutely)<br> amazing on you.
+                    <br>
+                    <br>
+                    - Sits on the waist
+                    <br>
+                    - Belt loops
+                    <br>
+                    - 5-pocket design
+                    <br>
+                    - Button and zip-fly fastening
+                    <br>
+                    - Dark wash
+                    <br>
+                    - Stretch denim
+                    <br>
+                    - Skinny fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/jeans/black-%27lift-%26-shape%27-high-waist-skinny-jeans/p/631911801" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+      <!-- Product 14 -->
+      
+      <div class="filter footwear">
+    <li class="product">
+        <img id ="prod14" src="https://media3.newlookassets.com/i/newlook/637716701.jpg"/>
+        <br>
+        <p class ="title">Wide Fit Black Teddy Lined Chunky Lace
+        <br> Up Boots </p>
+        <p class="price">27.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal14" class="modal">
+          <div class="modal-content" id="desc14">
+               <span class="close">&times;</span>
+              <p><b>Wide Fit Black Teddy Lined Chunky Lace <br> Up Boots</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Gear up for the cold with these teddy lined boots.
+                    <br>
+                    <br>
+                    - Wide fit (D fitting)
+                    <br>
+                    - Extra measure across the insole, joint and instep
+                    <br>
+                    - Soft suedette finish
+                    <br>
+                    - Lace-up front
+                    <br>
+                    - Silver-tone zip detail
+                    <br>
+                    - Teddy lining
+                    <br>
+                    - Rounded toe
+                    <br>
+                    - Zip side fastening
+                    <br>
+                    - Chunky sole
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/footwear/boots/wide-fit-black-teddy-lined-chunky-lace-up-boots/p/637716701" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+      <!-- Product 15 -->
+          
+      <div class="filter coats-jackets">
+    <li class="product">
+        <img id ="prod15" src="https://media3.newlookassets.com/i/newlook/619712438.jpg"/>
+        <br>
+        <p class ="title">Dark Green Faux Fur Longline Coat </p>
+        <br>
+        <p class="price">45.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal15" class="modal">
+          <div class="modal-content" id="desc15">
+               <span class="close">&times;</span>
+              <p><b>Dark Green Faux Fur Longline Coat</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Go for a luxe finish with this faux fur coat.
+                    <br>
+                    <br>
+                    - Collared neckline
+                    <br>
+                    - Long sleeves
+                    <br>
+                    - Side pockets
+                    <br>
+                    - Popper front fastening
+                    <br>
+                    - Faux fur finish
+                    <br>
+                    - Regular fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/coats-jackets/dark-green-faux-fur-longline-coat/p/619712438" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+       <!-- Product 16 -->
+      
+      <div class="filter nightwear">
+    <li class="product">
+        <img id ="prod16" src="https://media3.newlookassets.com/i/newlook/629877202.jpg"/>
+        <br>
+        <p class ="title">Pale Grey Fluffy Hooded Dressing Gown </p>
+        <br>
+        <p class="price">25.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal16" class="modal">
+          <div class="modal-content" id="desc16">
+               <span class="close">&times;</span>
+              <p><b>Pale Grey Fluffy Hooded Dressing Gown</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Stay snug in this grey fluffy dressing gown.
+                    <br>
+                    <br>
+                    - Hooded neckline
+                    <br>
+                    - Long sleeves
+                    <br>
+                    - Double pocket front
+                    <br>
+                    - Faux fur trim and lining
+                    <br>
+                    - Belted waist
+                    <br>
+                    - Longline design
+                    <br>
+                    - Super-soft fluffy finish
+                    <br>
+                    - Regular fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/nightwear/pale-grey-fluffy-hooded-dressing-gown/p/629877202" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+       <!-- Product 17 -->
+      
+      <div class="filter coats-jackets">
+    <li class="product">
+        <img id ="prod17" src="https://media2.newlookassets.com/i/newlook/619653202.jpg"/>
+        <br>
+        <p class ="title">Pale Grey Revere Collar Coat </p>
+        <br>
+        <p class="price">35.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal17" class="modal">
+          <div class="modal-content" id="desc17">
+               <span class="close">&times;</span>
+              <p><b>Pale Grey Revere Collar Coat</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Layer up your look with this stylish pale grey coat.
+                    <br>
+                    <br>
+                    - Revere collar
+                    <br>
+                    - Long sleeves
+                    <br>
+                    - Double button fastening
+                    <br>
+                    - 2 front pockets
+                    <br>
+                    - Fully lined
+                    <br>
+                    - Long hem
+                    <br>
+                    - Felt-look finish
+                    <br>
+                    - Regular fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/coats-jackets/formal-coats/pale-grey-revere-collar-coat/p/619653202" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+       <!-- Product 18 -->
+      
+      <div class="filter jeans">
+    <li class="product">
+        <img id ="prod18" src="https://media2.newlookassets.com/i/newlook/623185401.jpg"/>
+        <br>
+        <p class ="title">Black Super Soft Super Skinny India
+        <br>Jeans </p>
+        <p class="price">22.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal18" class="modal">
+          <div class="modal-content" id="desc18">
+               <span class="close">&times;</span>
+              <p><b>Black Super Soft Super Skinny India<br>Jeans</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Meet the super-skinny jean that makes you <br>feel all super-confident…
+                    <br>
+                    <br>
+                    - Sits on the waist
+                    <br>
+                    - Belt loops
+                    <br>
+                    - 5-pocket design
+                    <br>
+                    - Button and zip-fly fastening
+                    <br>
+                    - Dark wash
+                    <br>
+                    - High-stretch denim
+                    <br>
+                    - Super-skinny fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/jeans/black-super-soft-super-skinny-india-jeans/p/623185401" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+       <!-- Product 19 -->
+      
+      <div class="filter coats-jackets">
+    <li class="product">
+        <img id ="prod19" src="https://media2.newlookassets.com/i/newlook/620187701.jpg"/>
+        <br>
+        <p class ="title">Black Leather-Look Biker Jacket </p>
+        <br>
+        <p class="price">32.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal19" class="modal">
+          <div class="modal-content" id="desc19">
+               <span class="close">&times;</span>
+              <p><b>Black Leather-Look Biker Jacket</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Add a cool layer to your look with this black biker jacket.
+                    <br>
+                    <br>
+                    - Revere collar
+                    <br>
+                    - Long sleeves
+                    <br>
+                    - Side pockets
+                    <br>
+                    - Zip front fastening
+                    <br>
+                    - Leather-look finish
+                    <br>
+                    - Regular fit
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/clothing/coats-jackets/black-leather-look-biker-jacket-/p/620187701" target="_blank">Buy Now</a>
+            </div>
+        </div>
+      
+       <!-- Product 20 -->
+      
+      <div class="filter footwear">
+    <li class="product">
+        <img id ="prod20" src="https://media2.newlookassets.com/i/newlook/633518801.jpg"/>
+        <br>
+        <p class ="title">Black Leather Flat Chelsea Boots </p>
+        <br>
+        <p class="price" id="p1">35.99</p>
+      </li>
+      </div>
+      
+      <div id="myModal20" class="modal">
+          <div class="modal-content" id="desc20">
+               <span class="close">&times;</span>
+              <p><b>Black Leather Flat Chelsea Boots</b>
+              <br>
+              </p>
+                <p class="lefttxt">
+
+
+                <br>
+                  Smarten up your style with these leather Chelsea boots.
+                    <br>
+                    <br>
+                    - Real leather
+                    <br>
+                    - Elasticated side panels
+                    <br>
+                    - Stud and tab detail
+                    <br>
+                    - Almond toe
+                    <br>
+                    - Pull-on design
+                    <br>
+                    - Low block heel
+   
+                <br>
+              </p>
+              <br>
+              <a href="https://www.newlook.com/uk/womens/footwear/boots/black-leather-flat-chelsea-boots/p/633518801" target="_blank">Buy Now</a>
+            </div>
+        </div>
+    
+  </ul>
+  <div class="scroll-arrow" id="scroll-right" onclick="scrollRight()">
+    &#8594;
+  </div>
+</section>
+ 
+
+
+
+<script src="products.js"></script>
+
+
+
+    
+</body>
+</html>

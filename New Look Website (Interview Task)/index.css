@@ -1,0 +1,328 @@
+
+
+/* Global styling */
+header{
+
+    font-family: 'Big Shoulders Display', cursive;
+
+}
+h1{
+   
+    text-align: center;
+    text-transform: uppercase;
+    color: #3c3c3c;
+}
+h2{
+    text-align: center;
+    color: darkgrey;
+}
+img:hover{
+    cursor: pointer;
+}
+a{
+    background-color: #000000;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+#nav{
+    background-color: #3C3C3C;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+
+
+}
+
+/* Carousel styling */
+body{
+    
+    font-family: "Arial",Arial, serif;
+}
+div{
+     display: inline-block;
+}
+section {
+  text-align: center;
+  margin-top: 2.5%;
+}
+.scroll-arrow {
+  width: 10%;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    padding:0;
+    margin:0;
+    opacity: 0.5;
+  font-size:34px;
+  transition: 0.2s;
+}
+.scroll-arrow:hover {
+  transition: 0.2s;
+  opacity:1;
+}
+  ul {
+    width: 70%;
+    scroll-behavior: smooth;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+      transition: 0.2s;
+  }
+li, img {
+  width: 300px;
+}
+  li:hover {
+    transition: 0.2s;
+  }
+.title{
+    text-align: left;
+
+    color: #3c3c3c;
+    
+}
+.price{
+    margin-top: -2px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Searchbar */
+
+ #searchbar{ 
+     margin-top: 1%;
+     padding:15px; 
+     background-color: black;
+     color: white;
+     border-radius: 10px;
+     border: none;
+
+   } 
+#searchbar:hover{ 
+
+     background-color: white;
+    color: black;
+    border-radius: 10px;
+     border: none;
+
+   } 
+#searchbar:active{ 
+
+     background-color: white;
+    color: black;
+    border-radius: 10px;
+     border: none;
+
+   } 
+ 
+input[type=text] { 
+         border-radius: 10px;
+     border: none;
+      width: 30%; 
+      transition: width 0.15s ease-in-out; 
+   } 
+ 
+/* Filter */
+#myBtnContainer{
+   justify-content: center;
+
+
+}
+.filter{
+     display: none; /* Hidden by default */
+}
+
+.show {
+  display: inline-block;
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.product{
+    overflow: hidden;
+}
+
+/* Price Range */
+
+.range-slider {
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    height: 2.3em;
+
+}
+
+.range-slider input[type="range"] {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+input[type="number"] {
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1em;
+}
+input[type="number"]:invalid,
+input[type="number"]:out-of-range {
+    border: 2px solid #ff6347;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+}
+input[type="range"]:focus {
+    outline: none;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #FFFFFF;
+}
+input[type="range"]:focus::-ms-fill-lower {
+    background: #FFFFFF;
+}
+input[type="range"]:focus::-ms-fill-upper {
+    background: #FFFFFF;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #FFFFFF;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 0px #000;
+    border: 1px solid #FFFFFF;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #000000;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #FFFFFF;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0;
+}
+input[type="range"]::-moz-range-thumb {
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 0px #000;
+    border: 1px solid #FFFFFF;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #a1d0ff;
+    cursor: pointer;
+}
+input[type="range"]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+    background: #000000;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0;
+}
+input[type="range"]::-ms-thumb {
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 0px #000;
+    border: 1px solid #FFFFFF;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #a1d0ff;
+    cursor: pointer;
+}
+#numberslider{
+    font-size: 12px;
+    color: white;
+}
+/* popup */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
